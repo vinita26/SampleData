@@ -1,0 +1,2127 @@
+Asin,Price,Product Link,Title,Stars,Ratings,Used Price,New Price,Category,Brand,column
+B07JWV47JW,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_electronics_sr_pg1_1?ie=UTF8&adId=A0548361165KQ5RJVIK67&url=https%3A%2F%2Fwww.amazon.in%2FApple-iPhone-XR-64GB-Black%2Fdp%2FB07JWV47JW%2Fref%3Dlp_1389401031_1_1_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1574662654%26sr%3D1-1-spons%26psc%3D1&qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse,Apple iPhone XR (64GB) - Black,4.5 out of 5 stars,"7,280",,,Mobiles & Accessories,Apple,"See available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&adIndex=0""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&eventType=2&adIndex=0"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&eventType=2&adIndex=0"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&eventType=2&adIndex=0"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&adIndex=0""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20027059041703&adIndex=0"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=HAWARF259E34HTX3B76X&amp;childRequestId=HAWARF259E34HTX3B76X&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=1&amp;qualifier=1574662654&amp;id=4151092009947287"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20027059041703&amp;eventType=2&amp;adIndex=0"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20027059041703&amp;adIndex=0&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Apple iPhone XR (64GB) - Blackby Apple¬†¬†47,900¬†¬†76,900You Save: ¬†¬†29,000
+        (37%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit CardsNo cost EMI available on Bajaj Finserv CarSee Details and 2 more promotions
+    4.5 out of 5 stars
+7,280"
+B07HGHZ2K9,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_electronics_sr_pg1_2?ie=UTF8&adId=A00051151CETPK0AYAN0E&url=https%3A%2F%2Fwww.amazon.in%2FTest-Exclusive-634%2Fdp%2FB07HGHZ2K9%2Fref%3Dlp_1389401031_1_2_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1574662654%26sr%3D1-2-spons%26psc%3D1&qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse,"Samsung Galaxy M10s (Stainless Black, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)",4.3 out of 5 stars,"6,045",,,Mobiles & Accessories,Samsung,"See available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&adIndex=1""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&eventType=2&adIndex=1"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&eventType=2&adIndex=1"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&eventType=2&adIndex=1"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&adIndex=1""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20028505516605&adIndex=1"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=HAWARF259E34HTX3B76X&amp;childRequestId=HAWARF259E34HTX3B76X&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=2&amp;qualifier=1574662654&amp;id=4151092009947287"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20028505516605&amp;eventType=2&amp;adIndex=1"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20028505516605&amp;adIndex=1&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Samsung Galaxy M10s (Stainless Black, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)by Samsung¬†¬†8,499¬†¬†10,000You Save: ¬†¬†1,501
+        (15%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.3 out of 5 stars
+6,045"
+B07Z29CPDX,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_electronics_sr_pg1_3?ie=UTF8&adId=A0585050TALGHOBWSP55&url=https%3A%2F%2Fwww.amazon.in%2FCELLBUZZ-Tempered-Protector-Installation-Warranty%2Fdp%2FB07Z29CPDX%2Fref%3Dlp_1389401031_1_3_sspa%3Fs%3Delectronics%26ie%3DUTF8%26qid%3D1574662654%26sr%3D1-3-spons%26psc%3D1&qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse,CELLBUZZ Premium Tempered Glass For Apple iPhone 11/XR Edge to Edge Screen Protector With Full Installation Kit And Warranty (PACK OF 1),4.6 out of 5 stars,25,,,Mobiles & Accessories,CELLBUZZ,"See available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&adIndex=2""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&eventType=2&adIndex=2"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&eventType=2&adIndex=2"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&eventType=2&adIndex=2"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&adIndex=2""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&id=4151092009947287&widgetName=sp_atf_browse&adId=20030295967205&adIndex=2"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=HAWARF259E34HTX3B76X&amp;childRequestId=HAWARF259E34HTX3B76X&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=3&amp;qualifier=1574662654&amp;id=4151092009947287"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20030295967205&amp;eventType=2&amp;adIndex=2"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574662654&amp;id=4151092009947287&amp;widgetName=sp_atf_browse&amp;adId=20030295967205&amp;adIndex=2&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]CELLBUZZ Premium Tempered Glass For Apple iPhone 11/XR Edge to Edge Screen Protector With Full Installation Kit And Warranty (PACK OF 1)by CELLBUZZ¬†¬†299¬†¬†999You Save: ¬†¬†700
+        (70%)
+    Get it by Wednesday, November 2710% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotionsSave 5% with coupon
+    4.6 out of 5 stars
+25"
+B07HGMQX6N,,https://www.amazon.in/Test-Exclusive-628/dp/B07HGMQX6N/ref=lp_1389401031_1_4?s=electronics&ie=UTF8&qid=1574662654&sr=1-4,"Samsung Galaxy M30s (Sapphire Blue, 4GB RAM, Super AMOLED Display, 64GB Storage, 6000mAH Battery)",4.3 out of 5 stars,"90,441",,,Mobiles & Accessories,Samsung,"Best sellerin SmartphonesSee available choicesSamsung Galaxy M30s (Sapphire Blue, 4GB RAM, Super AMOLED Display, 64GB Storage, 6000mAH Battery)by Samsung¬†¬†13,999¬†¬†15,500You Save: ¬†¬†1,501
+        (9%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo Cost EMI availableSee Details and 3 more promotions
+    4.3 out of 5 stars
+90,441"
+B071Z8M4KX,,https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=lp_1389401031_1_5?s=electronics&ie=UTF8&qid=1574662654&sr=1-5,boAt BassHeads 100 in-Ear Headphones with Mic (Black),4.1 out of 5 stars,"38,152",,,Mobiles & Accessories,Boat,"Best sellerin Mobile Phone Wired HeadsetsSee available choicesboAt BassHeads 100 in-Ear Headphones with Mic (Black)by Boat¬†¬†399¬†¬†999You Save: ¬†¬†600
+        (60%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.1 out of 5 stars
+38,152"
+B07C2VJXP4,,https://www.amazon.in/255-Bluetooth-Wireless-Earphone-Immersive/dp/B07C2VJXP4/ref=lp_1389401031_1_6?s=electronics&ie=UTF8&qid=1574662654&sr=1-6,boAt Rockerz 255 Sports Bluetooth Wireless Earphone with Immersive Stereo Sound and Hands Free Mic (Active Black),3.9 out of 5 stars,"60,435",,,Mobiles & Accessories,Boat,"Best sellerin Mobile Phone Bluetooth HeadsetsSee available choicesboAt Rockerz 255 Sports Bluetooth Wireless Earphone with Immersive Stereo Sound and Hands Free Mic (Active Black)by Boat¬†¬†1,498¬†¬†2,990You Save: ¬†¬†1,492
+        (49%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.9 out of 5 stars
+60,435"
+B07HGLB1TJ,,https://www.amazon.in/Test-Exclusive-629/dp/B07HGLB1TJ/ref=lp_1389401031_1_7?s=electronics&ie=UTF8&qid=1574662654&sr=1-7,"Samsung Galaxy M30s (Opal Black, 4GB RAM, Super AMOLED Display, 64GB Storage, 6000mAH Battery)",4.3 out of 5 stars,"90,192",,,Mobiles & Accessories,Samsung,"See available choicesSamsung Galaxy M30s (Opal Black, 4GB RAM, Super AMOLED Display, 64GB Storage, 6000mAH Battery)by Samsung¬†¬†13,999¬†¬†15,500You Save: ¬†¬†1,501
+        (9%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo Cost EMI availableSee Details and 3 more promotions
+    4.3 out of 5 stars
+90,192"
+B07X1KSLBV,,https://www.amazon.in/Redmi-Note-Pro-Gamma-Storage/dp/B07X1KSLBV/ref=lp_1389401031_1_8?s=electronics&ie=UTF8&qid=1574662654&sr=1-8,"Redmi Note 8 Pro (Gamma Green, 6GB RAM, 128GB Storage)",4.4 out of 5 stars,555,,,Mobiles & Accessories,Redmi,"Redmi Note 8 Pro (Gamma Green, 6GB RAM, 128GB Storage)by Redmi¬†¬†15,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardAirtle double data offerSee Details and 3 more promotions
+    4.4 out of 5 stars
+555"
+B07X1KT6LW,,https://www.amazon.in/Redmi-Note-Pro-White-Storage/dp/B07X1KT6LW/ref=lp_1389401031_1_9?s=electronics&ie=UTF8&qid=1574662654&sr=1-9,"Redmi Note 8 Pro (Halo White, 6GB RAM, 64GB Storage)",4.4 out of 5 stars,685,,,Mobiles & Accessories,Redmi,"Redmi Note 8 Pro (Halo White, 6GB RAM, 64GB Storage)by Redmi¬†¬†14,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.4 out of 5 stars
+685"
+B07VXJS7DH,,https://www.amazon.in/Mi-20000mAH-Li-Polymer-Sandstone-Charging/dp/B07VXJS7DH/ref=lp_1389401031_1_10?s=electronics&ie=UTF8&qid=1574662654&sr=1-10,Mi 20000mAH Li-Polymer Power Bank 2i (Sandstone Black) with 18W Fast Charging,4.2 out of 5 stars,"53,726",,,Mobiles & Accessories,Mi,"Best sellerin Power BanksSee available choicesMi 20000mAH Li-Polymer Power Bank 2i (Sandstone Black) with 18W Fast Chargingby Mi¬†¬†1,499¬†¬†1,999You Save: ¬†¬†500
+        (25%)
+    Get it by Thursday, November 2810% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+53,726"
+B07XJWTYM2,,https://www.amazon.in/realme-RMA108-Realme-Buds-Wireless/dp/B07XJWTYM2/ref=lp_1389401031_1_11?s=electronics&ie=UTF8&qid=1574662654&sr=1-11,Realme Buds Wireless,4.4 out of 5 stars,"5,591",,,Mobiles & Accessories,realme,"See available choicesRealme Buds Wirelessby realme¬†¬†1,799¬†¬†1,999You Save: ¬†¬†200
+        (10%)
+    Get it by Tomorrow, Nov 26More Buying Choices¬†¬†1,699offer(6 offers)10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.4 out of 5 stars
+5,591"
+B07VZRJQX1,,https://www.amazon.in/Mi-10000mAH-Li-Polymer-Power-Charging/dp/B07VZRJQX1/ref=lp_1389401031_1_12?s=electronics&ie=UTF8&qid=1574662654&sr=1-12,Mi 10000mAH Li-Polymer Power Bank 2i (Black) with 18W Fast Charging,4.2 out of 5 stars,"53,730",,,Mobiles & Accessories,Mi,"See available choicesMi 10000mAH Li-Polymer Power Bank 2i (Black) with 18W Fast Chargingby Mi¬†¬†892¬†¬†1,199You Save: ¬†¬†307
+        (25%)
+    10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+53,730"
+B01DEWVZ2C,,https://www.amazon.in/JBL-C100SI-Ear-Headphones-Black/dp/B01DEWVZ2C/ref=lp_1389401031_1_13?s=electronics&ie=UTF8&qid=1574662654&sr=1-13,JBL C100SI In-Ear Headphones with Mic (Black),4 out of 5 stars,"47,269",,,Mobiles & Accessories,JBL,"See available choicesJBL C100SI In-Ear Headphones with Mic (Black)by JBL¬†¬†649¬†¬†1,299You Save: ¬†¬†650
+        (50%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4 out of 5 stars
+47,269"
+B07HGJFP9M,,https://www.amazon.in/Test-Exclusive-636/dp/B07HGJFP9M/ref=lp_1389401031_1_14?s=electronics&ie=UTF8&qid=1574662654&sr=1-14,"Samsung Galaxy M30 (Metallic Blue, 5000mAh Battery, Super AMOLED Display, 3GB RAM, 32GB Storage)",4.2 out of 5 stars,"54,846",,,Mobiles & Accessories,Samsung,"See available choicesSamsung Galaxy M30 (Metallic Blue, 5000mAh Battery, Super AMOLED Display, 3GB RAM, 32GB Storage)by Samsung¬†¬†9,999¬†¬†11,000You Save: ¬†¬†1,001
+        (9%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo Cost EMI availableSee Details and 3 more promotions
+    4.2 out of 5 stars
+54,846"
+B07HGJ7WM6,,https://www.amazon.in/Test-Exclusive-631/dp/B07HGJ7WM6/ref=lp_1389401031_1_15?s=electronics&ie=UTF8&qid=1574662654&sr=1-15,"Samsung Galaxy M30s ( Blue, 6GB RAM, Super AMOLED Display, 128GB Storage, 6000mAH Battery)",4.3 out of 5 stars,"90,226",,,Mobiles & Accessories,Samsung,"See available choicesSamsung Galaxy M30s ( Blue, 6GB RAM, Super AMOLED Display, 128GB Storage, 6000mAH Battery)by Samsung¬†¬†16,999¬†¬†18,500You Save: ¬†¬†1,501
+        (8%)
+    In stock10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo Cost EMI availableSee Details and 3 more promotions
+    4.3 out of 5 stars
+90,226"
+B07HGH82LT,,https://www.amazon.in/Test-Exclusive-633/dp/B07HGH82LT/ref=lp_1389401031_1_16?s=electronics&ie=UTF8&qid=1574662654&sr=1-16,"Samsung Galaxy M10s (Metallic Blue, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)",4.3 out of 5 stars,"6,065",,,Mobiles & Accessories,Samsung,"See available choicesSamsung Galaxy M10s (Metallic Blue, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)by Samsung¬†¬†8,499¬†¬†10,000You Save: ¬†¬†1,501
+        (15%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.3 out of 5 stars
+6,065"
+B07X1KT6LD,,https://www.amazon.in/Redmi-Note-Neptune-Blue-Storage/dp/B07X1KT6LD/ref=lp_1389401031_1_17?s=electronics&ie=UTF8&qid=1574662654&sr=1-17,"Redmi Note 8 (Neptune Blue, 4GB RAM, 64GB Storage)",4.5 out of 5 stars,"1,237",,,Mobiles & Accessories,Redmi,"Redmi Note 8 (Neptune Blue, 4GB RAM, 64GB Storage)by Redmi¬†¬†9,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardAirtle double data offerSee Details and 3 more promotions
+    4.5 out of 5 stars
+1,237"
+B07DJQLRZN,,https://www.amazon.in/Test-Exclusive-742/dp/B07DJQLRZN/ref=lp_1389401031_1_18?s=electronics&ie=UTF8&qid=1574662654&sr=1-18,"Vivo U10 (Electric Blue, 5000 mAH 18W Fast Charge Battery, 4GB RAM, 64GB Storage)",4.2 out of 5 stars,"10,885",,,Mobiles & Accessories,Vivo,"See available choicesVivo U10 (Electric Blue, 5000 mAH 18W Fast Charge Battery, 4GB RAM, 64GB Storage)by Vivo¬†¬†10,990¬†¬†13,990You Save: ¬†¬†3,000
+        (21%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo cost EMI available on Bajaj Finserv CarNo cost EMI available on select cards.See Details and 4 more promotions
+    4.2 out of 5 stars
+10,885"
+B07X4PKGSN,,https://www.amazon.in/Redmi-Note-Pro-White-Storage/dp/B07X4PKGSN/ref=lp_1389401031_1_19?s=electronics&ie=UTF8&qid=1574662654&sr=1-19,"Redmi Note 8 Pro (Halo White, 6GB RAM, 128GB Storage)",4.3 out of 5 stars,794,,,Mobiles & Accessories,Redmi,"Redmi Note 8 Pro (Halo White, 6GB RAM, 128GB Storage)by Redmi¬†¬†15,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardAirtle double data offerSee Details and 3 more promotions
+    4.3 out of 5 stars
+794"
+B07X1KT1FJ,,https://www.amazon.in/Redmi-Note-Moonlight-White-Storage/dp/B07X1KT1FJ/ref=lp_1389401031_1_20?s=electronics&ie=UTF8&qid=1574662654&sr=1-20,"Redmi Note 8 (Moonlight White, 4GB RAM, 64GB Storage)",4.5 out of 5 stars,606,,,Mobiles & Accessories,Redmi,"Redmi Note 8 (Moonlight White, 4GB RAM, 64GB Storage)by Redmi¬†¬†9,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.5 out of 5 stars
+606"
+B07HGHZ2K9,,https://www.amazon.in/Test-Exclusive-634/dp/B07HGHZ2K9/ref=lp_1389401031_1_21?s=electronics&ie=UTF8&qid=1574662654&sr=1-21,"Samsung Galaxy M10s (Stainless Black, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)",4.3 out of 5 stars,"6,045",,,Mobiles & Accessories,Samsung,"See available choicesSamsung Galaxy M10s (Stainless Black, 3GB RAM, Super AMOLED Display, 32GB Storage, 4000mAH Battery)by Samsung¬†¬†8,499¬†¬†10,000You Save: ¬†¬†1,501
+        (15%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.3 out of 5 stars
+6,045"
+B07X3P11YY,,https://www.amazon.in/Redmi-Note-Pro-Shadow-Storage/dp/B07X3P11YY/ref=lp_1389401031_1_22?s=electronics&ie=UTF8&qid=1574662654&sr=1-22,"Redmi Note 8 Pro (Shadow Black, 8GB RAM, 128GB Storage)",4.1 out of 5 stars,244,,,Mobiles & Accessories,Redmi,"Redmi Note 8 Pro (Shadow Black, 8GB RAM, 128GB Storage)by Redmi¬†¬†17,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.1 out of 5 stars
+244"
+B07X3NZZN6,,https://www.amazon.in/Redmi-7A-Matte-Blue-Storage/dp/B07X3NZZN6/ref=lp_1389401031_1_23?s=electronics&ie=UTF8&qid=1574662654&sr=1-23,"Redmi 7A (Matte Blue, 2GB RAM, 16GB Storage)",4.1 out of 5 stars,"10,645",,,Mobiles & Accessories,Redmi,"See available choicesRedmi 7A (Matte Blue, 2GB RAM, 16GB Storage)by Redmi¬†¬†5,499¬†¬†6,499You Save: ¬†¬†1,000
+        (15%)
+    Get it by Tomorrow, Nov 265% off with HSBC Cashback cardSee Details and 1 more promotion
+    4.1 out of 5 stars
+10,645"
+B073JWXGNT,,https://www.amazon.in/SanDisk-Class-Memory-Adapter-SDSQUAR-032G-GN6MA/dp/B073JWXGNT/ref=lp_1389401031_1_24?s=electronics&ie=UTF8&qid=1574662654&sr=1-24,SanDisk 32GB Class 10 Micro SDHC Memory Card with Adapter (SDSQUAR-032G-GN6MA),4.4 out of 5 stars,"19,911",,,Mobiles & Accessories,SanDisk,"Best sellerin Micro SD CardsSee available choicesSanDisk 32GB Class 10 Micro SDHC Memory Card with Adapter (SDSQUAR-032G-GN6MA)by SanDisk¬†¬†419¬†¬†1,000You Save: ¬†¬†581
+        (58%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.4 out of 5 stars
+19,911"
+B07X1KT6LF,,https://www.amazon.in/Redmi-Note-Neptune-128GB-Storage/dp/B07X1KT6LF/ref=lp_1389401031_1_25?s=electronics&ie=UTF8&qid=1574662654&sr=1-25,"Redmi Note 8 (Neptune Blue, 6GB RAM, 128GB Storage)",4.3 out of 5 stars,330,,,Mobiles & Accessories,Redmi,"Redmi Note 8 (Neptune Blue, 6GB RAM, 128GB Storage)by Redmi¬†¬†12,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.3 out of 5 stars
+330"
+B07X4PXKZQ,,https://www.amazon.in/Redmi-Note-Pro-Gamma-Storage/dp/B07X4PXKZQ/ref=lp_1389401031_1_26?s=electronics&ie=UTF8&qid=1574662654&sr=1-26,"Redmi Note 8 Pro (Gamma Green, 6GB RAM, 64GB Storage)",4.4 out of 5 stars,275,,,Mobiles & Accessories,Redmi,"Redmi Note 8 Pro (Gamma Green, 6GB RAM, 64GB Storage)by Redmi¬†¬†14,999Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardSee Details and 2 more promotions
+    4.4 out of 5 stars
+275"
+B07JQKR35P,,https://www.amazon.in/JBL-C50HI-Ear-Headphones-Blue/dp/B07JQKR35P/ref=lp_1389401031_1_27?s=electronics&ie=UTF8&qid=1574662654&sr=1-27,JBL C50HI in-Ear Headphones with Mic (Blue),3.7 out of 5 stars,"13,062",,,Mobiles & Accessories,JBL,"See available choicesJBL C50HI in-Ear Headphones with Mic (Blue)by JBL¬†¬†479¬†¬†999You Save: ¬†¬†520
+        (52%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.7 out of 5 stars
+13,062"
+B00N2VILDM,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_computers_sr_pg1_1?ie=UTF8&adId=A07923372THDOE6TEA2VA&url=https%3A%2F%2Fwww.amazon.in%2FAmazonBasics-Cat-6-Ethernet-5Feet-1-5Meters%2Fdp%2FB00N2VILDM%2Fref%3Dlp_976392031_1_1_sspa%3Fs%3Dcomputers%26ie%3DUTF8%26qid%3D1574663070%26sr%3D1-1-spons%26psc%3D1&qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse,"AmazonBasics RJ45 Cat-6 Ethernet Patch/LAN  Cable -5Feet (1.5Meters),Black",4.5 out of 5 stars,446,,,Computers & Accessories,AmazonBasics,"See available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&adIndex=0""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&eventType=2&adIndex=0"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&eventType=2&adIndex=0"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&eventType=2&adIndex=0"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&adIndex=0""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20015043315906&adIndex=0"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=JY3Z50DKAV0N8EWBWAD9&amp;childRequestId=JY3Z50DKAV0N8EWBWAD9&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=1&amp;qualifier=1574663069&amp;id=5839167222868694"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20015043315906&amp;eventType=2&amp;adIndex=0"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20015043315906&amp;adIndex=0&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]AmazonBasics RJ45 Cat-6 Ethernet Patch/LAN  Cable -5Feet (1.5Meters),Blackby AmazonBasics  349  595You Save:   246
+        (41%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.5 out of 5 stars
+446"
+B00WRDS8H0,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_computers_sr_pg1_2?ie=UTF8&adId=A09415241RBYVWM36WBHU&url=https%3A%2F%2Fwww.amazon.in%2FAmazonBasics-Ventilated-Laptop-Stand-Black%2Fdp%2FB00WRDS8H0%2Fref%3Dlp_976392031_1_2_sspa%3Fs%3Dcomputers%26ie%3DUTF8%26qid%3D1574663070%26sr%3D1-2-spons%26psc%3D1&qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse,AmazonBasics Ventilated Laptop Stand (Black),4.3 out of 5 stars,"1,870",,,Computers & Accessories,AmazonBasics,"Best sellerin Portable Computer Cooling PadsSee available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&adIndex=1""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&eventType=2&adIndex=1"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&eventType=2&adIndex=1"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&eventType=2&adIndex=1"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&adIndex=1""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016725352006&adIndex=1"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=JY3Z50DKAV0N8EWBWAD9&amp;childRequestId=JY3Z50DKAV0N8EWBWAD9&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=2&amp;qualifier=1574663069&amp;id=5839167222868694"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20016725352006&amp;eventType=2&amp;adIndex=1"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20016725352006&amp;adIndex=1&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]AmazonBasics Ventilated Laptop Stand (Black)by AmazonBasicsLimited time deal  759  1,095You Save:   336
+        (30%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+1,870"
+B00A0VCJPI,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_computers_sr_pg1_3?ie=UTF8&adId=A03608953VLWD8LCKXV5Y&url=https%3A%2F%2Fwww.amazon.in%2FTP-Link-TL-WA850RE-300Mbps-Universal-Extender%2Fdp%2FB00A0VCJPI%2Fref%3Dlp_976392031_1_3_sspa%3Fs%3Dcomputers%26ie%3DUTF8%26qid%3D1574663070%26sr%3D1-3-spons%26psc%3D1&qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse,TP-Link TL-WA850RE 300Mbps Universal Wi-Fi Range Extender (White),4.2 out of 5 stars,"6,749",,,Computers & Accessories,TP-Link,"Best sellerin Repeaters & ExtendersSee available choicesSponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&adIndex=2""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&eventType=2&adIndex=2"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&eventType=2&adIndex=2"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&eventType=2&adIndex=2"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&adIndex=2""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Grid"" + '-' +""4"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&id=5839167222868694&widgetName=sp_atf_browse&adId=20016256071203&adIndex=2"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=JY3Z50DKAV0N8EWBWAD9&amp;childRequestId=JY3Z50DKAV0N8EWBWAD9&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=3&amp;qualifier=1574663069&amp;id=5839167222868694"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20016256071203&amp;eventType=2&amp;adIndex=2"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663069&amp;id=5839167222868694&amp;widgetName=sp_atf_browse&amp;adId=20016256071203&amp;adIndex=2&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]TP-Link TL-WA850RE 300Mbps Universal Wi-Fi Range Extender (White)by TP-Link  1,169  2,999You Save:   1,830
+        (61%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+6,749"
+B07HCXQZ4P,,https://www.amazon.in/Mi-XMSH05HM-Band-3-Black/dp/B07HCXQZ4P/ref=lp_976392031_1_4?s=computers&ie=UTF8&qid=1574663070&sr=1-4,Mi Band 3 (Black),4.1 out of 5 stars,"29,642",999used(1 offer),,Computers & Accessories,Mi,"Mi Band 3 (Black)by Mi  1,749  2,199You Save:   450
+        (20%)
+    Get it by Tomorrow, Nov 26More Buying Choices  999used(1 offer)10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardINR 200 cashbackFlat Rs.50 back using Amazon Pay UPISee Details and 4 more promotions
+    4.1 out of 5 stars
+29,642"
+B0734VLDTC,,https://www.amazon.in/SanDisk-Ultra-Dual-32GB-Drive/dp/B0734VLDTC/ref=lp_976392031_1_5?s=computers&ie=UTF8&qid=1574663070&sr=1-5,SanDisk Ultra Dual 32GB USB 3.0 OTG Pen Drive (Gold),4.3 out of 5 stars,"8,231",,,Computers & Accessories,SanDisk,"Best sellerin Pen DrivesSee available choicesSanDisk Ultra Dual 32GB USB 3.0 OTG Pen Drive (Gold)by SanDisk  499  800You Save:   301
+        (37%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+8,231"
+B073JWXGNT,,https://www.amazon.in/SanDisk-Class-Memory-Adapter-SDSQUAR-032G-GN6MA/dp/B073JWXGNT/ref=lp_976392031_1_6?s=computers&ie=UTF8&qid=1574663070&sr=1-6,SanDisk 32GB Class 10 Micro SDHC Memory Card with Adapter (SDSQUAR-032G-GN6MA),4.4 out of 5 stars,"19,911",,,Computers & Accessories,SanDisk,"Best sellerin Micro SD CardsSee available choicesSanDisk 32GB Class 10 Micro SDHC Memory Card with Adapter (SDSQUAR-032G-GN6MA)by SanDisk  419  1,000You Save:   581
+        (58%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.4 out of 5 stars
+19,911"
+B07CD2BN46,,https://www.amazon.in/Mi-Earphones-Basic-Mic-Black/dp/B07CD2BN46/ref=lp_976392031_1_7?s=computers&ie=UTF8&qid=1574663070&sr=1-7,Mi Earphone Basic with Ultra deep bass and mic (Black),4.2 out of 5 stars,"29,003",,,Computers & Accessories,Mi,"See available choicesMi Earphone Basic with Ultra deep bass and mic (Black)by Mi  399  599You Save:   200
+        (33%)
+    10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+29,003"
+B0789LZTCJ,,https://www.amazon.in/Rugged-Extra-Tough-Unbreakable-Braided/dp/B0789LZTCJ/ref=lp_976392031_1_8?s=computers&ie=UTF8&qid=1574663070&sr=1-8,boAt Rugged v3 Extra Tough Unbreakable Braided Micro USB Cable 1.5 Meter (Black),3.9 out of 5 stars,"9,037",,,Computers & Accessories,Boat,"Best sellerin USB CablesSee available choicesboAt Rugged v3 Extra Tough Unbreakable Braided Micro USB Cable 1.5 Meter (Black)by Boat  299  799You Save:   500
+        (62%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.9 out of 5 stars
+9,037"
+B00BX5FOCK,,https://www.amazon.in/SanDisk-Cruzer-Blade-Flash-Drive/dp/B00BX5FOCK/ref=lp_976392031_1_9?s=computers&ie=UTF8&qid=1574663070&sr=1-9,SanDisk Cruzer Blade 64GB USB 2.0 Flash Drive,4.2 out of 5 stars,"48,412",,,Computers & Accessories,SanDisk,"See available choicesSanDisk Cruzer Blade 64GB USB 2.0 Flash Driveby SanDisk  604  1,100You Save:   496
+        (45%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+48,412"
+B07H4X1SCK,,https://www.amazon.in/Mi-Original-Cable-120cm-Black/dp/B07H4X1SCK/ref=lp_976392031_1_10?s=computers&ie=UTF8&qid=1574663070&sr=1-10,Mi USB Cable 120cm (Black),4.3 out of 5 stars,"3,733",,,Computers & Accessories,Mi,"Mi USB Cable 120cm (Black)by Mi  229  299You Save:   70
+        (23%)
+    Get it by Tomorrow, Nov 26More Buying Choices  228offer(4 offers)10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+3,733"
+B07HJD1KH4,,https://www.amazon.in/MJSXJ02CM-1080P-Security-Camera-White/dp/B07HJD1KH4/ref=lp_976392031_1_11?s=computers&ie=UTF8&qid=1574663070&sr=1-11,Mi MJSXJ02CM 360° 1080P WiFi Home Security Camera (White),4.3 out of 5 stars,"3,636",,,Computers & Accessories,Mi,"Best sellerin Spy CamerasMi MJSXJ02CM 360° 1080P WiFi Home Security Camera (White)by Mi  2,698  2,899You Save:   201
+        (6%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+3,636"
+B077T3BG5L,,https://www.amazon.in/Zebronics-Km2100-Multimedia-USB-Keyboard/dp/B077T3BG5L/ref=lp_976392031_1_12?s=computers&ie=UTF8&qid=1574663070&sr=1-12,Zebronics Zeb KM2100 Multimedia USB Keyboard,3.4 out of 5 stars,"2,489",,,Computers & Accessories,Zebronics,"Best sellerin KeyboardsSee available choicesZebronics Zeb KM2100 Multimedia USB Keyboardby ZebronicsLimited time deal  225  399You Save:   174
+        (43%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.4 out of 5 stars
+2,489"
+B01N5KHFG9,,https://www.amazon.in/SanDisk-Ultra-Dual-32GB-Drive/dp/B01N5KHFG9/ref=lp_976392031_1_13?s=computers&ie=UTF8&qid=1574663070&sr=1-13,SanDisk Ultra Dual 32GB USB 3.0 OTG Pen Drive,4.2 out of 5 stars,"27,881",,566new(37 offers),Computers & Accessories,SanDisk,"See available choicesSanDisk Ultra Dual 32GB USB 3.0 OTG Pen Driveby SanDisk  582  800You Save:   218
+        (27%)
+    Get it by Tomorrow, Nov 26More Buying Choices  566new(37 offers)10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+27,881"
+B06ZZ62BN7,,https://www.amazon.in/HP-X4E78AA-Combo-Pack-Tri-Color-Cartridges/dp/B06ZZ62BN7/ref=lp_976392031_1_14?s=computers&ie=UTF8&qid=1574663070&sr=1-14,HP X4E78AA 680 Combo-Pack Black & Tri-Color Ink Cartridges,3.9 out of 5 stars,"3,925",,,Computers & Accessories,HP,"Best sellerin Ink CartridgesSee available choicesHP X4E78AA 680 Combo-Pack Black & Tri-Color Ink Cartridgesby HP  1,054.50Subscribe & SaveGet regular delivery of this item and save 5.0%  1,110  1,242You Save:   132
+        (10%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.9 out of 5 stars
+3,925"
+B01J0XWYKQ,,https://www.amazon.in/Logitech-B170-Wireless-Mouse-Black/dp/B01J0XWYKQ/ref=lp_976392031_1_15?s=computers&ie=UTF8&qid=1574663070&sr=1-15,Logitech B170 Wireless Mouse (Black),4.3 out of 5 stars,"5,255",,530new(46 offers),Computers & Accessories,Logitech,"Best sellerin MiceLogitech B170 Wireless Mouse (Black)by Logitech  565  895You Save:   330
+        (36%)
+    Get it by Tomorrow, Nov 26More Buying Choices  530new(46 offers)10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+5,255"
+B009VCGPSY,,https://www.amazon.in/HP-X1000-Wired-Mouse-Black/dp/B009VCGPSY/ref=lp_976392031_1_16?s=computers&ie=UTF8&qid=1574663070&sr=1-16,HP X1000 Wired Mouse (Black/Grey),4.2 out of 5 stars,"8,155",,,Computers & Accessories,HP,"See available choicesHP X1000 Wired Mouse (Black/Grey)by HP  249  399You Save:   150
+        (37%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+8,155"
+B00D75AB6I,,https://www.amazon.in/Sennheiser-CX-180-Street-II/dp/B00D75AB6I/ref=lp_976392031_1_17?s=computers&ie=UTF8&qid=1574663070&sr=1-17,"Sennheiser CX 180 Street II In-Ear Headphone (Black), without Mic.",4.2 out of 5 stars,"34,684",,,Computers & Accessories,Sennheiser,"Sennheiser CX 180 Street II In-Ear Headphone (Black), without Mic.by SennheiserLimited time deal  749  1,090You Save:   341
+        (31%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.2 out of 5 stars
+34,684"
+B06Y63B51W,,https://www.amazon.in/Samsung-MicroSDHC-Memory-Adapter-MB-MC32GA/dp/B06Y63B51W/ref=lp_976392031_1_18?s=computers&ie=UTF8&qid=1574663070&sr=1-18,"Samsung EVO Plus Grade 1, Class 10 32GB MicroSDHC 95 MB/S Memory Card with SD Adapter (MB-MC32GA/IN)",4.4 out of 5 stars,"20,740",,,Computers & Accessories,Samsung,"See available choicesSamsung EVO Plus Grade 1, Class 10 32GB MicroSDHC 95 MB/S Memory Card with SD Adapter (MB-MC32GA/IN)by Samsung  415  999You Save:   584
+        (58%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.4 out of 5 stars
+20,740"
+B00AWMBPHS,,https://www.amazon.in/Pampers-Active-Small-Diapers-Count/dp/B00AWMBPHS/ref=lp_976392031_1_19?s=computers&ie=UTF8&qid=1574663070&sr=1-19,"Pampers Active Baby Diapers, Small (46 Count)",4.3 out of 5 stars,"10,885",,,Computers & Accessories,Pampers,"See available choicesPampers Active Baby Diapers, Small (46 Count)by Pampers  564.30Subscribe & SaveGet regular delivery of this item and save 5.0%  594  699You Save:   105
+        (15%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+10,885"
+B07DC3T64Q,,https://www.amazon.in/Toshiba-THN-U202L0160A4-Hayabusa-Pendrive-Light/dp/B07DC3T64Q/ref=lp_976392031_1_20?s=computers&ie=UTF8&qid=1574663070&sr=1-20,Toshiba U202 16GB USB 2.0 Pendrive (Blue),4.3 out of 5 stars,"1,169",,,Computers & Accessories,Toshiba,"Toshiba U202 16GB USB 2.0 Pendrive (Blue)by Toshiba  249  600You Save:   351
+        (58%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.3 out of 5 stars
+1,169"
+B075P7BLV5,,https://www.amazon.in/JioFi-Hotspot-M2S-Portable-Device/dp/B075P7BLV5/ref=lp_976392031_1_21?s=computers&ie=UTF8&qid=1574663070&sr=1-21,JioFi 4G Hotspot M2S 150 Mbps Jio 4G Portable Wi-Fi Data Device (Black),3.9 out of 5 stars,"11,737",,,Computers & Accessories,JioFi,"Best sellerin Data Cards & DonglesSee available choicesJioFi 4G Hotspot M2S 150 Mbps Jio 4G Portable Wi-Fi Data Device (Black)by JioFi  949  2,329You Save:   1,380
+        (59%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.9 out of 5 stars
+11,737"
+B07TB9KGPR,,https://www.amazon.in/Zebronics-Zeb-Symphony-Bluetooth-Earphone-Assistant/dp/B07TB9KGPR/ref=lp_976392031_1_22?s=computers&ie=UTF8&qid=1574663070&sr=1-22,Zebronics Zeb-Symphony Bluetooth Earphone with Voice Assistant,3.3 out of 5 stars,600,,,Computers & Accessories,Zebronics,"See available choicesZebronics Zeb-Symphony Bluetooth Earphone with Voice Assistantby ZebronicsLimited time deal  699  1,199You Save:   500
+        (41%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.3 out of 5 stars
+600"
+B008V6T1IW,,https://www.amazon.in/Sennheiser-CX-275-Universal-Headphone/dp/B008V6T1IW/ref=lp_976392031_1_23?s=computers&ie=UTF8&qid=1574663070&sr=1-23,Sennheiser CX 275 S In -Ear Universal Mobile Headphone With Mic (Black),4.1 out of 5 stars,"13,242",,,Computers & Accessories,Sennheiser,"Sennheiser CX 275 S In -Ear Universal Mobile Headphone With Mic (Black)by SennheiserLimited time deal  1,599  2,490You Save:   891
+        (35%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.1 out of 5 stars
+13,242"
+B07TGDC67L,,https://www.amazon.in/Amazfit-Lite-Smart-Watch-Black/dp/B07TGDC67L/ref=lp_976392031_1_24?s=computers&ie=UTF8&qid=1574663070&sr=1-24,Amazfit Bip Lite Smart Watch (Black),3.7 out of 5 stars,"4,168",,,Computers & Accessories,Amazfit,"Best sellerin Smart Watches & AccessoriesSee available choicesAmazfit Bip Lite Smart Watch (Black)by Amazfit  3,999  5,499You Save:   1,500
+        (27%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.7 out of 5 stars
+4,168"
+B008XT42JU,,https://www.amazon.in/GM-Modular-3060-Book-Multicolour/dp/B008XT42JU/ref=lp_976392031_1_25?s=computers&ie=UTF8&qid=1574663070&sr=1-25,"GM 3060- E-Book 4+1 Spike Guard(with Master Switch, Indicator, Safety Shutter, International Sockets )",4.5 out of 5 stars,"3,261",,,Computers & Accessories,GM,"Best sellerin Surge ProtectorsSee available choicesGM 3060- E-Book 4+1 Spike Guard(with Master Switch, Indicator, Safety Shutter, International Sockets )by GM  310 -   859Some sizes are Prime eligible10% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    4.5 out of 5 stars
+3,261"
+B007IREFE0,,https://www.amazon.in/Seagate-Expansion-Portable-External-Playstation/dp/B007IREFE0/ref=lp_976392031_1_26?s=computers&ie=UTF8&qid=1574663070&sr=1-26,Seagate Expansion Portable 1.5TB External Hard Drive HDD – USB 3.0 for PC Laptop (STEA1500400),4.3 out of 5 stars,"6,442",,,Computers & Accessories,Seagate,"Best sellerin External Hard DisksSee available choicesSeagate Expansion Portable 1.5TB External Hard Drive HDD – USB 3.0 for PC Laptop (STEA1500400)by Seagate  3,999  5,899You Save:   1,900
+        (32%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardNo cost EMI available on Bajaj Finserv CarFlat Rs.50 back using Amazon Pay UPISee Details and 4 more promotions
+    4.3 out of 5 stars
+6,442"
+B00KGZZ824,,https://www.amazon.in/Sony-MDR-ZX110A-Stereo-Headphones-without/dp/B00KGZZ824/ref=lp_976392031_1_27?s=computers&ie=UTF8&qid=1574663070&sr=1-27,"Sony MDR-ZX110A On-Ear Stereo Headphones (White), without mic",3.9 out of 5 stars,"19,313",,,Computers & Accessories,Sony,"See available choicesSony MDR-ZX110A On-Ear Stereo Headphones (White), without micby Sony  649  1,390You Save:   741
+        (53%)
+    Get it by Tomorrow, Nov 2610% cashback on HDFC Bank Debit Cards5% off with HSBC Cashback cardFlat Rs.50 back using Amazon Pay UPISee Details and 3 more promotions
+    3.9 out of 5 stars
+19,313"
+B07TFK6WPD,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_1?ie=UTF8&adId=A08681561J0RJ5FTKCCEQ&url=https%3A%2F%2Fwww.amazon.in%2FDAMENSCH-Mens-Softer-Micromodal-Briefs%2Fdp%2FB07TFK6WPD%2Fref%3Dlp_1968024031_1_1_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663124%26sr%3D1-1-spons%26psc%3D1&qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse,DAMENSCH Men’s 3X Softer Micromodal Air Briefs - Pack of 3 (100% Guarantee if NOT satisfied),4.2 out of 5 stars,15,,,Men,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&adIndex=0""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&eventType=2&adIndex=0"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&eventType=2&adIndex=0"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&eventType=2&adIndex=0"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&adIndex=0""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444607&adIndex=0"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=VSV1N1XYDEXFTG1JK32R&amp;childRequestId=VSV1N1XYDEXFTG1JK32R&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=1&amp;qualifier=1574663124&amp;id=2135012513712690"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497444607&amp;eventType=2&amp;adIndex=0"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497444607&amp;adIndex=0&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us knowDAMENSCH Men’s 3X Softer Micromodal Air Briefs - Pack of 3 (100% Guarantee if NOT satisfied)  1,045   1,050
+    4.2 out of 5 stars
+15"
+B07VWBXV1C,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_2?ie=UTF8&adId=A08613481V64Y1CS27ELF&url=https%3A%2F%2Fwww.amazon.in%2FDAMENSCH-Mens-Softer-Micromodal-Briefs%2Fdp%2FB07VWBXV1C%2Fref%3Dlp_1968024031_1_2_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663124%26sr%3D1-2-spons%26psc%3D1&qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse,DAMENSCH Men’s 3X Softer Micromodal Air Briefs - Pack of 3 (100% Guarantee if NOT satisfied),2.9 out of 5 stars,8,,,Men,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&adIndex=1""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&eventType=2&adIndex=1"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&eventType=2&adIndex=1"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&eventType=2&adIndex=1"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&adIndex=1""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497443207&adIndex=1"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=VSV1N1XYDEXFTG1JK32R&amp;childRequestId=VSV1N1XYDEXFTG1JK32R&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=2&amp;qualifier=1574663124&amp;id=2135012513712690"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497443207&amp;eventType=2&amp;adIndex=1"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497443207&amp;adIndex=1&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us knowDAMENSCH Men’s 3X Softer Micromodal Air Briefs - Pack of 3 (100% Guarantee if NOT satisfied)  1,045   1,050
+    2.9 out of 5 stars
+8"
+B07NL363BV,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_3?ie=UTF8&adId=A08601762XAWNZG5IOD05&url=https%3A%2F%2Fwww.amazon.in%2FDAMENSCH-Mens-Softer-Micromodal-Trunks%2Fdp%2FB07NL363BV%2Fref%3Dlp_1968024031_1_3_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663124%26sr%3D1-3-spons%26psc%3D1&qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse,DAMENSCH Men’s 3X Softer Micromodal Air Trunks - Pack of 3 (100% Guarantee if NOT satisfied),4.3 out of 5 stars,58,,,Men,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&adIndex=2""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&eventType=2&adIndex=2"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&eventType=2&adIndex=2"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&eventType=2&adIndex=2"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&adIndex=2""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&id=2135012513712690&widgetName=sp_atf_browse&adId=20028497444307&adIndex=2"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=VSV1N1XYDEXFTG1JK32R&amp;childRequestId=VSV1N1XYDEXFTG1JK32R&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=3&amp;qualifier=1574663124&amp;id=2135012513712690"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497444307&amp;eventType=2&amp;adIndex=2"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663124&amp;id=2135012513712690&amp;widgetName=sp_atf_browse&amp;adId=20028497444307&amp;adIndex=2&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us knowDAMENSCH Men’s 3X Softer Micromodal Air Trunks - Pack of 3 (100% Guarantee if NOT satisfied)  1,170Save 5% with coupon
+    4.3 out of 5 stars
+58"
+B073WX582T,,https://www.amazon.in/Navy-Sport-Solid-Ankle-Length/dp/B073WX582T/ref=lp_1968024031_1_4?s=apparel&ie=UTF8&qid=1574663124&sr=1-4,"NAVYSPORT Men's Cotton Solid Ankle Socks, Pack of 3 (Multi-Coloured)",4 out of 5 stars,"2,399",,,Men,,"Best sellerin Men's Socks
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        NAVYSPORT Men's Cotton Solid Ankle Socks, Pack of 3 (Multi-Coloured)  279   499
+    4 out of 5 stars
+2,399"
+B00OZ56H6W,,https://www.amazon.in/Seibertron-Mens-Skullies-Beanie-Stu23246_Black_One/dp/B00OZ56H6W/ref=lp_1968024031_1_5?s=apparel&ie=UTF8&qid=1574663124&sr=1-5,New Polar Fleece Balaclava Warm Full Face Cover Winter Camping Ski hiking snow Mask Beanie Cs Hat for Valentine's Day Gift,3.5 out of 5 stars,338,,,Men,,"Best sellerin Men's Caps & Hats
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        New Polar Fleece Balaclava Warm Full Face Cover Winter Camping Ski hiking snow Mask Beanie Cs Hat for Valentine's Day Gift  244 -   395
+    3.5 out of 5 stars
+338"
+B07GTGKW9S,,https://www.amazon.in/Handcuffs-Fashion-Waterproof-Athletic-Friendly/dp/B07GTGKW9S/ref=lp_1968024031_1_6?s=apparel&ie=UTF8&qid=1574663124&sr=1-6,Handcuffs Biking/Cycling Gloves Warm Waterproof Winter Outdoor Gloves Athletic Touch Screen Friendly Gloves Mittens For Men And Women (Grey) Size -L,3.2 out of 5 stars,95,,,Men,,"Best sellerin Men's Cold Weather Gloves
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Handcuffs Biking/Cycling Gloves Warm Waterproof Winter Outdoor Gloves Athletic Touch Screen Friendly Gloves Mittens For Men And…  599   1,000
+    3.2 out of 5 stars
+95"
+B0787P2GQG,,https://www.amazon.in/Knotyy-Unisex-Woolen-Beanie-Black/dp/B0787P2GQG/ref=lp_1968024031_1_7?s=apparel&ie=UTF8&qid=1574663124&sr=1-7,Knotyy Men's Cap,4.1 out of 5 stars,255,,,Men,,"Knotyy Men's Cap  299   1,200Save 5% with coupon
+    4.1 out of 5 stars
+255"
+B07JN95S5D,,https://www.amazon.in/Peter-England-Cotton-Length-Socks/dp/B07JN95S5D/ref=lp_1968024031_1_8?s=apparel&ie=UTF8&qid=1574663124&sr=1-8,"Peter England Men's Cotton Full Length Socks (Grey, Blue, Black, Free Size) Pack of 3",4 out of 5 stars,258,,,Men,,"Peter England Men's Cotton Full Length Socks (Grey, Blue, Black, Free Size) Pack of 3  349
+    4 out of 5 stars
+258"
+B07JCKYCJ1,,https://www.amazon.in/Intellilens%C2%AE-Spectacles-Anti-glare-Protection-Computer/dp/B07JCKYCJ1/ref=lp_1968024031_1_9?s=apparel&ie=UTF8&qid=1574663124&sr=1-9,Intellilens® Premium Blue Cut Zero Power Spectacles with Anti-glare for Eye Protection from UV by Computer Tablet Laptop Mobile (Unisex),4.1 out of 5 stars,856,,,Men,,"Best sellerin Men's Spectacle Frames
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Intellilens® Premium Blue Cut Zero Power Spectacles with Anti-glare for Eye Protection from UV by Computer Tablet Laptop Mobile (Unisex)  749   2,999
+    4.1 out of 5 stars
+856"
+B07Y8S46XB,,https://www.amazon.in/elegante-Branded-Silver-inspired-Sunglass/dp/B07Y8S46XB/ref=lp_1968024031_1_10?s=apparel&ie=UTF8&qid=1574663124&sr=1-10,elegante Branded Metal Body Silver Square inspired from Kabir Singh Sunglass for Men and Boys,4 out of 5 stars,75,,,Men,,"elegante Branded Metal Body Silver Square inspired from Kabir Singh Sunglass for Men and Boys  499   1,999
+    4 out of 5 stars
+75"
+B07G5V4JQ8,,https://www.amazon.in/Alexvyan-Unisex-Woolen-Beanie-Scarf/dp/B07G5V4JQ8/ref=lp_1968024031_1_11?s=apparel&ie=UTF8&qid=1574663124&sr=1-11,"AlexVyan Premium Quality Ultra Soft Unisex Woolen Beanie Cap Plus Neck Scarf Set for Men Women Girl Boy - Warm, Snow Proof - 20 Degree Temperature",4 out of 5 stars,126,,,Men,,"Best sellerin Men's Accessories
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        AlexVyan Premium Quality Ultra Soft Unisex Woolen Beanie Cap Plus Neck Scarf Set for Men Women Girl Boy - Warm, Snow Proof - 20 Degree…  593 -   595
+    4 out of 5 stars
+126"
+B07RCBGZGR,,https://www.amazon.in/GLINTO-Premium-Loafer-Socks-Multicoloured/dp/B07RCBGZGR/ref=lp_1968024031_1_12?s=apparel&ie=UTF8&qid=1574663124&sr=1-12,"GLINTO Men's Premium Loafer Socks, Pack of 3 (Free size)",3.9 out of 5 stars,438,,,Men,,"GLINTO Men's Premium Loafer Socks, Pack of 3 (Free size)  229   499
+    3.9 out of 5 stars
+438"
+B078RN2FG2,,https://www.amazon.in/CREATURE-Wayfarer-Protected-Sunglasses-Frame-Black/dp/B078RN2FG2/ref=lp_1968024031_1_13?s=apparel&ie=UTF8&qid=1574663124&sr=1-13,CREATURE Matt Finish Club Master Wayfarer Uv Protected Unisex Sunglasses(Doit-006| 53| Frame-Black),3.1 out of 5 stars,850,,,Men,,"CREATURE Matt Finish Club Master Wayfarer Uv Protected Unisex Sunglasses(Doit-006| 53| Frame…  176   1,499
+    3.1 out of 5 stars
+850"
+B07BN4VVD8,,https://www.amazon.in/PAUSE-Cotton-Sleeve-Regular-Fit-PASRG03181189-BLK-M/dp/B07BN4VVD8/ref=lp_1968024031_1_14?s=apparel&ie=UTF8&qid=1574663124&sr=1-14,PAUSE Men's Solid Cotton Long Sleeve Round Neck Shrug,3.4 out of 5 stars,389,,,Men,,"Best sellerin Men's Sweaters
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        PAUSE Men's Solid Cotton Long Sleeve Round Neck Shrug  399   1,499
+    3.4 out of 5 stars
+389"
+B07BTW8DQC,,https://www.amazon.in/Star-GG-LN-700-Neoprene-Lycra-Gloves/dp/B07BTW8DQC/ref=lp_1968024031_1_15?s=apparel&ie=UTF8&qid=1574663124&sr=1-15,Star X GG-LN-700 Neoprene and Lycra Gym Gloves,3.6 out of 5 stars,346,,,Men,,"Best sellerin Body Bars
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Star X GG-LN-700 Neoprene and Lycra Gym Gloves  245   700
+    3.6 out of 5 stars
+346"
+B01G3NUDI6,,https://www.amazon.in/RC-ROYAL-CLASS-Woolen-Multicolored/dp/B01G3NUDI6/ref=lp_1968024031_1_16?s=apparel&ie=UTF8&qid=1574663124&sr=1-16,RC. ROYAL CLASS Men's Woolen Thick Towel Multicolored Formal Socks (Pack of 3 Pairs),4.2 out of 5 stars,408,,,Men,,"RC. ROYAL CLASS Men's Woolen Thick Towel Multicolored Formal Socks (Pack of 3 Pairs)  340   650
+    4.2 out of 5 stars
+408"
+B073WZD93T,,https://www.amazon.in/Navy-Sport-Cotton-Solid-Length/dp/B073WZD93T/ref=lp_1968024031_1_17?s=apparel&ie=UTF8&qid=1574663124&sr=1-17,"NAVYSPORT Men's Cotton Athletic Socks, Pack of 3",4 out of 5 stars,"1,267",,,Men,,"NAVYSPORT Men's Cotton Athletic Socks, Pack of 3  299   599
+    4 out of 5 stars
+1,267"
+B019592KZY,,https://www.amazon.in/FabSeasons-Cotton-Unisex-Skull-Charcoal/dp/B019592KZY/ref=lp_1968024031_1_18?s=apparel&ie=UTF8&qid=1574663124&sr=1-18,FabSeasons Cotton Skull Cap,3.8 out of 5 stars,908,,,Men,,"FabSeasons Cotton Skull Cap  245 -   269
+    3.8 out of 5 stars
+908"
+B07LD783TM,,https://www.amazon.in/Axe-Style-Casual-Leather-Reversible/dp/B07LD783TM/ref=lp_1968024031_1_19?s=apparel&ie=UTF8&qid=1574663124&sr=1-19,Axe Style ARTIFICIAL PU Leather Boy's Casual & Formal Reversible Belt Black/Brown (Size 28-44 Cut to fit men's Belt),3.5 out of 5 stars,279,,,Men,,"Axe Style ARTIFICIAL PU Leather Boy's Casual & Formal Reversible Belt Black/Brown (Size 28-44 Cut to fit men's Belt)  285   1,499
+    3.5 out of 5 stars
+279"
+B06XHGX8KZ,,https://www.amazon.in/Creature-Reversible-Pu-Leather-Formal-Color-Black/dp/B06XHGX8KZ/ref=lp_1968024031_1_20?s=apparel&ie=UTF8&qid=1574663124&sr=1-20,Creature Reversible Pu-Leather Formal Belt For Men(Color-Black/Brown||BL-01|| 46 inches lenght|| Waist upto -40 inches),3.6 out of 5 stars,219,,,Men,,"Creature Reversible Pu-Leather Formal Belt For Men(Color-Black/Brown||BL-01|| 46 inches…  296   1,499
+    3.6 out of 5 stars
+219"
+B076FQMZZ1,,https://www.amazon.in/HORNBULL-Leather-Wallet-Combo-BW4595_Brown/dp/B076FQMZZ1/ref=lp_1968024031_1_21?s=apparel&ie=UTF8&qid=1574663124&sr=1-21,Hornbull Diwali Gift Set for Men's - Brown Wallet and Brown Belt Men's Combo Gift Set 4595,3.9 out of 5 stars,633,,,Men,,"Hornbull Diwali Gift Set for Men's - Brown Wallet and Brown Belt Men's Combo Gift Set 4595Deal of the Day  882 -   999
+    3.9 out of 5 stars
+633"
+B07TYDDDCL,,https://www.amazon.in/Polarized-Protected-Sunglasses-Material-Wayfarer/dp/B07TYDDDCL/ref=lp_1968024031_1_22?s=apparel&ie=UTF8&qid=1574663124&sr=1-22,Simsco Polarized Protected Aviator Black Sunglasses with TAC Material For Men Latest and For Women Stylish Wayfarer Sunglasses,4.2 out of 5 stars,96,,,Men,,"Best sellerin Men's Sunglasses
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Simsco Polarized Protected Aviator Black Sunglasses with TAC Material For Men Latest and For Women Stylish Wayfarer Sunglasses  594   858Save _ 30.00 with coupon
+    4.2 out of 5 stars
+96"
+B0721XXKKQ,,https://www.amazon.in/Lux-VENUS-Mens-Cotton-8904209874078_Venus_WH_RN_90_White/dp/B0721XXKKQ/ref=lp_1968024031_1_23?s=apparel&ie=UTF8&qid=1574663124&sr=1-23,LUX VENUS Men's Cotton Vest (Pack of 6),4 out of 5 stars,"1,044",,,Men,,"Best sellerin Men's Underwear Vests
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        LUX VENUS Men's Cotton Vest (Pack of 6)  262 -   1,008
+    4 out of 5 stars
+1,044"
+B00W04OOFQ,,https://www.amazon.in/Jockey-Mens-Vest-Pack-8820-0310-WHITE_White_M/dp/B00W04OOFQ/ref=lp_1968024031_1_24?s=apparel&ie=UTF8&qid=1574663124&sr=1-24,Jockey Men's Cotton Vest  (Pack of 3) (Modern Classic)(Colors & Print May Vary),3.6 out of 5 stars,984,,,Men,,"Jockey Men's Cotton Vest  (Pack of 3) (Modern Classic)(Colors & Print May Vary)  353 -   599
+    3.6 out of 5 stars
+984"
+B07G7CXTPF,,https://www.amazon.in/Generic-Unisex-Head-Bandana-Multicolour/dp/B07G7CXTPF/ref=lp_1968024031_1_25?s=apparel&ie=UTF8&qid=1574663124&sr=1-25,"Generic Unisex Head Wrap Bandana (Multicolour, Free Size) - Pack of 6",3.4 out of 5 stars,178,,,Men,,"Generic Unisex Head Wrap Bandana (Multicolour, Free Size) - Pack of 6  220   599
+    3.4 out of 5 stars
+178"
+B07WMV2BX3,,https://www.amazon.in/NAVYSPORT-Cotton-Formal-Cushion-Multicoloured/dp/B07WMV2BX3/ref=lp_1968024031_1_26?s=apparel&ie=UTF8&qid=1574663124&sr=1-26,"NAVYSPORT Men's Cotton Formal Socks with Cushion (Multicoloured, Free Size), Pack of 3",4.1 out of 5 stars,170,,,Men,,"NAVYSPORT Men's Cotton Formal Socks with Cushion (Multicoloured, Free Size), Pack of 3  259   599
+    4.1 out of 5 stars
+170"
+B01N1FT6QP,,https://www.amazon.in/Lux-Cottswool-Cotton-Thermal-COTT_Black_FS_RN_TRO_Set_90/dp/B01N1FT6QP/ref=lp_1968024031_1_27?s=apparel&ie=UTF8&qid=1574663124&sr=1-27,Lux Cottswool Men's Cotton Thermal Set,3.9 out of 5 stars,855,,,Men,,"Lux Cottswool Men's Cotton Thermal Set  498 -   900
+    3.9 out of 5 stars
+855"
+B00WFU4QMG,,https://www.amazon.in/Jockey-8037-0110-ASSTD-Black-M-8037-0110-Black_M/dp/B00WFU4QMG/ref=lp_1968024031_1_28?s=apparel&ie=UTF8&qid=1574663124&sr=1-28,Jockey Men's Cotton Brief(Colors & Print May Vary),4 out of 5 stars,"2,004",,,Men,,"Best sellerin Men's Underwear Briefs
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Jockey Men's Cotton Brief(Colors & Print May Vary)  99 -   489
+    4 out of 5 stars
+2,004"
+B071CP6K43,,https://www.amazon.in/Fastrack-protected-Sunglasses-P357BK1-millimeters/dp/B071CP6K43/ref=lp_1968024031_1_29?s=apparel&ie=UTF8&qid=1574663124&sr=1-29,Fastrack UV protected Square Men's Sunglasses (P357BK1|41 millimeters|Smoke (Grey/Black)),4 out of 5 stars,"2,060",,,Men,,"Fastrack UV protected Square Men's Sunglasses (P357BK1|41 millimeters|Smoke (Grey/Black))  594.95   799
+    4 out of 5 stars
+2,060"
+B07BFC6G2W,,https://www.amazon.in/Sunglasses-Premium-Quality-Wayfarer-Protection/dp/B07BFC6G2W/ref=lp_1968024031_1_30?s=apparel&ie=UTF8&qid=1574663124&sr=1-30,Rex Tony Stark Style Men's Sunglasses (Blue),3.5 out of 5 stars,217,,,Men,,"Rex Tony Stark Style Men's Sunglasses (Blue)  124   799
+    3.5 out of 5 stars
+217"
+B079ZW35RP,,https://www.amazon.in/Elk-Womens-Cotton-Helmet-3_Multicolor/dp/B079ZW35RP/ref=lp_1968024031_1_31?s=apparel&ie=UTF8&qid=1574663124&sr=1-31,Elk Men's & Women's Cotton Helmet Cap (Pack of 3_Multicolor) Seller Apparel,3.8 out of 5 stars,326,,,Men,,"Elk Men's & Women's Cotton Helmet Cap (Pack of 3_Multicolor) Seller Apparel  199   299
+    3.8 out of 5 stars
+326"
+B07THQ1JD3,,https://www.amazon.in/ETRG-Protection-Square-Unisex-Sunglass/dp/B07THQ1JD3/ref=lp_1968024031_1_32?s=apparel&ie=UTF8&qid=1574663124&sr=1-32,ETRG UV Protection Square Metal Body Unisex Sunglass (Brown),3.4 out of 5 stars,152,,,Men,,"ETRG UV Protection Square Metal Body Unisex Sunglass (Brown)  185   799
+    3.4 out of 5 stars
+152"
+B01LX57DWO,,https://www.amazon.in/Alan-Jones-Clothing-Cotton-Sweatshirt/dp/B01LX57DWO/ref=lp_1968024031_1_33?s=apparel&ie=UTF8&qid=1574663124&sr=1-33,Alan Jones Clothing Men's Cotton Hooded Sweatshirt,4 out of 5 stars,"3,236",,,Men,,"Best sellerin Clothing & Accessories
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Alan Jones Clothing Men's Cotton Hooded Sweatshirt  699 -   799
+    4 out of 5 stars
+3,236"
+B06Y46SMTD,,https://www.amazon.in/Xtrim-Leather-Workout-Gloves-Black/dp/B06Y46SMTD/ref=lp_1968024031_1_34?s=apparel&ie=UTF8&qid=1574663124&sr=1-34,XTRIM X Macho Men's Leather Gym Workout Gloves,4.3 out of 5 stars,998,,,Men,,"Best sellerin Exercise & Fitness Gloves
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        XTRIM X Macho Men's Leather Gym Workout Gloves  399   999
+    4.3 out of 5 stars
+998"
+B07L8D2RMV,,https://www.amazon.in/MyMei-Polyester-Collar-Zipper-Regular/dp/B07L8D2RMV/ref=lp_1968024031_1_35?s=apparel&ie=UTF8&qid=1574663124&sr=1-35,MyMei Men's Casual Jacket Stand Collar Zipper Design Regular Coat Outerwear,2.4 out of 5 stars,85,,,Men,,"MyMei Men's Casual Jacket Stand Collar Zipper Design Regular Coat Outerwear  1,299 -   1,399
+    2.4 out of 5 stars
+85"
+B07C9WCNGH,,https://www.amazon.in/Tex-Mercerised-Anti-slip-silicone-Technology/dp/B07C9WCNGH/ref=lp_1968024031_1_36?s=apparel&ie=UTF8&qid=1574663124&sr=1-36,"Tex Homz® (Pack of 6) Premium Mercerised Anti Slip Cotton Loafers No show Socks For Men, Women, Boys & Girls , Anti-slip silicone Technology | Unisex Cotton Socks Liners For Daily Use & Sports | Fits Upto UK Size 10, US Size 12 & Euro Size 45 | Pack of 6 pairs Socks ( Grey,White,Blue,Black)",3.5 out of 5 stars,293,,,Men,,"Tex Homz® (Pack of 6) Premium Mercerised Anti Slip Cotton Loafers No show Socks For Men, Women, Boys & Girls , Anti-slip silicone…  279   800
+    3.5 out of 5 stars
+293"
+B07V8SKP2C,,https://www.amazon.in/SUZO-Organic-Cotton-Sports-Socks/dp/B07V8SKP2C/ref=lp_1968024031_1_37?s=apparel&ie=UTF8&qid=1574663124&sr=1-37,SUZO Organic Soft and Pure Cotton Sports Socks Pack of 6 - Multicolor,3.5 out of 5 stars,50,,,Men,,"SUZO Organic Soft and Pure Cotton Sports Socks Pack of 6 - Multicolor  195   699
+    3.5 out of 5 stars
+50"
+B079SHJJ8B,,https://www.amazon.in/Tex-Homz-Unisex-Mercerised-Anti-Slip/dp/B079SHJJ8B/ref=lp_1968024031_1_38?s=apparel&ie=UTF8&qid=1574663124&sr=1-38,"Tex Homz Unisex Mercerised Anti-Slip Cotton Loafer Socks (Grey White Blue Black, Free Size) - Pack of 5",3.4 out of 5 stars,255,,,Men,,"Tex Homz Unisex Mercerised Anti-Slip Cotton Loafer Socks (Grey White Blue Black, Free Size) - Pack of 5  245   650
+    3.4 out of 5 stars
+255"
+B01HQ4O058,,https://www.amazon.in/Katso-Cotton-Hooded-T-Shirt-Katso-Hood-Full-Black-M/dp/B01HQ4O058/ref=lp_1968024031_1_39?s=apparel&ie=UTF8&qid=1574663124&sr=1-39,Katso Men's Cotton T-Shirt (Pack Of 1) (Katso-Hood-Full),3.8 out of 5 stars,"3,474",,,Men,,"Best sellerin Men's T-Shirts & Polos
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Katso Men's Cotton T-Shirt (Pack Of 1) (Katso-Hood-Full)  281 -   499
+    3.8 out of 5 stars
+3,474"
+B07T5BDF4F,,https://www.amazon.in/Aradhana-Fashion-Cotton-Length-Multicolor/dp/B07T5BDF4F/ref=lp_1968024031_1_40?s=apparel&ie=UTF8&qid=1574663124&sr=1-40,Aradhana Fashion Store Men's Cotton Ankle Length Socks Multicolor,2.8 out of 5 stars,642,,,Men,,"Aradhana Fashion Store Men's Cotton Ankle Length Socks Multicolor  78 -   689
+    2.8 out of 5 stars
+642"
+B06XQYCTLZ,,https://www.amazon.in/Nivia-Crystal-Gym-Gloves-M/dp/B06XQYCTLZ/ref=lp_1968024031_1_41?s=apparel&ie=UTF8&qid=1574663124&sr=1-41,Nivia Crystal Gym Gloves,3 out of 5 stars,268,,,Men,,"Nivia Crystal Gym Gloves  174   250
+    3 out of 5 stars
+268"
+B07L3P2HLW,,https://www.amazon.in/LEWEL-Stylish-Sleeve-T-Shirt-Bio-Washed/dp/B07L3P2HLW/ref=lp_1968024031_1_42?s=apparel&ie=UTF8&qid=1574663124&sr=1-42,"LEWEL Men's Full Sleeve Hooded T-Shirt (Red, White, Navy)",3.9 out of 5 stars,524,,,Men,,"LEWEL Men's Full Sleeve Hooded T-Shirt (Red, White, Navy)  499   1,999
+    3.9 out of 5 stars
+524"
+B01MUGUD0A,,https://www.amazon.in/Skytouch-Mens-Suspender-_Black-_Large/dp/B01MUGUD0A/ref=lp_1968024031_1_43?s=apparel&ie=UTF8&qid=1574663124&sr=1-43,Skytouch Mens Suspender Belt & Bow (Skytouch _Black _Large),3.8 out of 5 stars,352,,,Men,,"Best sellerin Men's Bow Ties
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Skytouch Mens Suspender Belt & Bow (Skytouch _Black _Large)  197   899
+    3.8 out of 5 stars
+352"
+B07CGH4HHY,,https://www.amazon.in/Balenzia-Cushioned-Sports-Socks-L-Grey/dp/B07CGH4HHY/ref=lp_1968024031_1_44?s=apparel&ie=UTF8&qid=1574663124&sr=1-44,"Balenzia Men's Cushioned High Ankle Sports Socks- Black,L.Grey, D.Grey(Pack of 3)",4.2 out of 5 stars,233,,,Men,,"Balenzia Men's Cushioned High Ankle Sports Socks- Black,L.Grey, D.Grey(Pack of 3)  299   327Save 5% with coupon
+    4.2 out of 5 stars
+233"
+B07NJJPWZN,,https://www.amazon.in/Dee-Mannequin-786-Leather-Gloves/dp/B07NJJPWZN/ref=lp_1968024031_1_45?s=apparel&ie=UTF8&qid=1574663124&sr=1-45,Dee mannequin Leather Gym Gloves,3.5 out of 5 stars,52,,,Men,,"Dee mannequin Leather Gym Gloves  179   999
+    3.5 out of 5 stars
+52"
+B07H7BBR2Z,,https://www.amazon.in/Veirdo-Mens-Jacket-Medium-ABLACK/dp/B07H7BBR2Z/ref=lp_1968024031_1_46?s=apparel&ie=UTF8&qid=1574663124&sr=1-46,Veirdo Cotton Jacket for Men,3.5 out of 5 stars,428,,,Men,,"Best sellerin Men's Jackets
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Veirdo Cotton Jacket for Men  649 -   749
+    3.5 out of 5 stars
+428"
+B07YGRW2WP,,https://www.amazon.in/Blayk-Unisex-Elastic-Shirt-Black/dp/B07YGRW2WP/ref=lp_1968024031_1_47?s=apparel&ie=UTF8&qid=1574663124&sr=1-47,Adjustable Near Shirt Stay,4.4 out of 5 stars,8,,,Men,,"Adjustable Near Shirt Stay  499   799
+    4.4 out of 5 stars
+8"
+B07N5H5TSG,,https://www.amazon.in/DFH-Cotton-Hooded-T-Shirt-Multicolour/dp/B07N5H5TSG/ref=lp_1968024031_1_48?s=apparel&ie=UTF8&qid=1574663124&sr=1-48,DFH Men Hooded T-Shirt (Pack of 2),3.7 out of 5 stars,407,,,Men,,"DFH Men Hooded T-Shirt (Pack of 2)  288 -   359
+    3.7 out of 5 stars
+407"
+B07FRXCM79,,https://www.amazon.in/LealDealz-Womens-Cotton-Ankle-Assorted/dp/B07FRXCM79/ref=lp_1968024031_1_49?s=apparel&ie=UTF8&qid=1574663124&sr=1-49,LealDealz Premium Cotton Ankle Socks for Men and Women - Pack of 5 Assorted colours,3.3 out of 5 stars,254,,,Men,,"LealDealz Premium Cotton Ankle Socks for Men and Women - Pack of 5 Assorted colours  289   645
+    3.3 out of 5 stars
+254"
+B07SGM2KPZ,,https://www.amazon.in/Gajraj-Knitted-Beanie-Women-Purple/dp/B07SGM2KPZ/ref=lp_1968024031_1_50?s=apparel&ie=UTF8&qid=1574663124&sr=1-50,Gajraj Knitted Beanie Cap for Men & Women,4.1 out of 5 stars,57,,,Men,,"Gajraj Knitted Beanie Cap for Men & Women  299   499
+    4.1 out of 5 stars
+57"
+B07R6YZDNR,,https://www.amazon.in/Vision-Driving-Around-Sunglasses-Polarized/dp/B07R6YZDNR/ref=lp_1968024031_1_51?s=apparel&ie=UTF8&qid=1574663124&sr=1-51,Suhav HD Night Day Vision Car Driving Wrap Around Anti Glare Sunglasses with Polarized Lens for Man and Women (Black and Yellow),3.2 out of 5 stars,83,,,Men,,"Suhav HD Night Day Vision Car Driving Wrap Around Anti Glare Sunglasses with Polarized Lens for Man and Women (Black and Yellow)  329   999
+    3.2 out of 5 stars
+83"
+B07PPWNDYZ,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_1?ie=UTF8&adId=A05498202MZKD6ZQBKH4U&url=https%3A%2F%2Fwww.amazon.in%2FNewport-University-Jeans-NUJN0929A_Black-Whiskered_32%2Fdp%2FB07PPWNDYZ%2Fref%3Dlp_1968076031_1_1_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663162%26sr%3D1-1-spons%26psc%3D1&qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse,Newport University Men's Slim Fit Stretchable Jeans,3.9 out of 5 stars,113,,,Jeans,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&adIndex=0""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&eventType=2&adIndex=0"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&eventType=2&adIndex=0"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&eventType=2&adIndex=0"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&adIndex=0""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371759404&adIndex=0"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=6F0XJ97YBBDKQJKZCQ6H&amp;childRequestId=6F0XJ97YBBDKQJKZCQ6H&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=1&amp;qualifier=1574663162&amp;id=368059919491157"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20031371759404&amp;eventType=2&amp;adIndex=0"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20031371759404&amp;adIndex=0&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Newport University Men's Slim Fit Stretchable Jeans  1,299
+    3.9 out of 5 stars
+113"
+B07PPWLJXW,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_2?ie=UTF8&adId=A10381852B81P3I15E6MJ&url=https%3A%2F%2Fwww.amazon.in%2FNewport-University-Skinny-NUJN1037B_Dark-Blue_28%2Fdp%2FB07PPWLJXW%2Fref%3Dlp_1968076031_1_2_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663162%26sr%3D1-2-spons%26psc%3D1&qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse,Newport University Men's Slim Fit Jeans,3.6 out of 5 stars,232,,,Jeans,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&adIndex=1""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&eventType=2&adIndex=1"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&eventType=2&adIndex=1"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&eventType=2&adIndex=1"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&adIndex=1""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20031371738104&adIndex=1"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=6F0XJ97YBBDKQJKZCQ6H&amp;childRequestId=6F0XJ97YBBDKQJKZCQ6H&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=2&amp;qualifier=1574663162&amp;id=368059919491157"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20031371738104&amp;eventType=2&amp;adIndex=1"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20031371738104&amp;adIndex=1&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Newport University Men's Slim Fit Jeans  999
+    3.6 out of 5 stars
+232"
+B074ZRXBW9,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_3?ie=UTF8&adId=A03438132OXGWDN8EG5MG&url=https%3A%2F%2Fwww.amazon.in%2FAmazon-Brand-Symbol-S5_Dark-Blue_32W%2Fdp%2FB074ZRXBW9%2Fref%3Dlp_1968076031_1_3_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663162%26sr%3D1-3-spons%26psc%3D1&qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse,Amazon Brand - Symbol Men's Skinny Fit Stretchable Jeans,4.1 out of 5 stars,18,,,Jeans,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&adIndex=2""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&eventType=2&adIndex=2"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&eventType=2&adIndex=2"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&eventType=2&adIndex=2"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&adIndex=2""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&id=368059919491157&widgetName=sp_atf_browse&adId=20020863403502&adIndex=2"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=6F0XJ97YBBDKQJKZCQ6H&amp;childRequestId=6F0XJ97YBBDKQJKZCQ6H&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=3&amp;qualifier=1574663162&amp;id=368059919491157"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20020863403502&amp;eventType=2&amp;adIndex=2"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663162&amp;id=368059919491157&amp;widgetName=sp_atf_browse&amp;adId=20020863403502&amp;adIndex=2&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Amazon Brand - Symbol Men's Skinny Fit Stretchable Jeans  602   2,099
+    4.1 out of 5 stars
+18"
+B019XSHB7O,,https://www.amazon.in/Ben-Martin-Relaxed-BMW-JJ3-DARK-p4-32_Dark-Blue_32/dp/B019XSHB7O/ref=lp_1968076031_1_4?s=apparel&ie=UTF8&qid=1574663162&sr=1-4,Ben Martin Men's Regular Fit Denim Jeans,3.4 out of 5 stars,"3,637",,,Jeans,,"Best sellerin Men's JeansBen Martin Men's Regular Fit Denim Jeans  689 -   748
+    3.4 out of 5 stars
+3,637"
+B076CTV6FK,,https://www.amazon.in/Urbano-Fashion-Mens-Jeans-eps-black-32-06/dp/B076CTV6FK/ref=lp_1968076031_1_5?s=apparel&ie=UTF8&qid=1574663162&sr=1-5,Urbano Fashion Men's Black Slim Fit Stretch Jeans,3.3 out of 5 stars,598,,,Jeans,,"Urbano Fashion Men's Black Slim Fit Stretch Jeans  499   1,299
+    3.3 out of 5 stars
+598"
+B07MV7CS22,,https://www.amazon.in/Zard-Stretchable-Fabric-Light-Jeans/dp/B07MV7CS22/ref=lp_1968076031_1_6?s=apparel&ie=UTF8&qid=1574663162&sr=1-6,"L,Zard Men's Stretchable Fabric Light Blue Slim Fit Jeans",3.2 out of 5 stars,526,,,Jeans,,"L,Zard Men's Stretchable Fabric Light Blue Slim Fit Jeans  599   2,299Save _ 50.00 with coupon
+    3.2 out of 5 stars
+526"
+B06Y6RMYKM,,https://www.amazon.in/Ben-Martin-Denim-Jeans-Bmw7-Jj-3-Blue_34-01_Blue_34/dp/B06Y6RMYKM/ref=lp_1968076031_1_7?s=apparel&ie=UTF8&qid=1574663162&sr=1-7,Ben Martin Men's Denim Regular Fit Jeans,3.5 out of 5 stars,407,,,Jeans,,"Ben Martin Men's Denim Regular Fit Jeans  649   2,499
+    3.5 out of 5 stars
+407"
+B06Y5P68KC,,https://www.amazon.in/Ben-Martin-Relaxed-Jeans-BMW7-JJ-3-GRN_32-01_Green_32/dp/B06Y5P68KC/ref=lp_1968076031_1_8?s=apparel&ie=UTF8&qid=1574663162&sr=1-8,Ben Martin Men's Denim Regular Fit Jeans,3.2 out of 5 stars,533,,,Jeans,,"Ben Martin Men's Denim Regular Fit Jeans  649   2,499
+    3.2 out of 5 stars
+533"
+B07DFPCD93,,https://www.amazon.in/Urbano-Fashion-Black-Stretch-eps-black-32-07/dp/B07DFPCD93/ref=lp_1968076031_1_9?s=apparel&ie=UTF8&qid=1574663162&sr=1-9,Urbano Fashion Men's Slim Fit Black Stretch Jeans,3.4 out of 5 stars,501,,,Jeans,,"Urbano Fashion Men's Slim Fit Black Stretch Jeans  499   1,299
+    3.4 out of 5 stars
+501"
+B074RKVN4M,,https://www.amazon.in/Urbano-Fashion-Mens-Jeans-jog-hps-black-30-fba/dp/B074RKVN4M/ref=lp_1968076031_1_10?s=apparel&ie=UTF8&qid=1574663162&sr=1-10,Urbano Fashion Men's Black Slim Fit Stretch Jogger Jeans,3.5 out of 5 stars,674,,,Jeans,,"Urbano Fashion Men's Black Slim Fit Stretch Jogger JeansDeal of the Day  649   1,499
+    3.5 out of 5 stars
+674"
+B07JMSZXBV,,https://www.amazon.in/Ragzo-Stretch-Stretchable-Fabric-Casual/dp/B07JMSZXBV/ref=lp_1968076031_1_11?s=apparel&ie=UTF8&qid=1574663162&sr=1-11,RAGZO Men's Black Stretch Slim Fit Stretchable Fabric Casual Wear Denim Jeans,4 out of 5 stars,96,,,Jeans,,"RAGZO Men's Black Stretch Slim Fit Stretchable Fabric Casual Wear Denim Jeans  699 -   799Save _ 50.00 with coupon
+    4 out of 5 stars
+96"
+B06Y586Q8R,,https://www.amazon.in/Ben-Martin-Relaxed-Jeans-BMW7-JJ-DMG_34-01_Blue_34/dp/B06Y586Q8R/ref=lp_1968076031_1_12?s=apparel&ie=UTF8&qid=1574663162&sr=1-12,Ben Martin Men's Denim Regular Fit Jeans,3.3 out of 5 stars,980,,,Jeans,,"Ben Martin Men's Denim Regular Fit Jeans  628 -   649
+    3.3 out of 5 stars
+980"
+B06Y5KT643,,https://www.amazon.in/Ben-Martin-Regular-Denim-BMW7-JJ-3-DBNL_32/dp/B06Y5KT643/ref=lp_1968076031_1_13?s=apparel&ie=UTF8&qid=1574663162&sr=1-13,Ben Martin Men's Regular Fit Denim Jeans,3.4 out of 5 stars,408,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans  649   2,499
+    3.4 out of 5 stars
+408"
+B019XSHH8M,,https://www.amazon.in/Ben-Martin-Relaxed-Jeans-BMW-JJ3-GREEN-P6-32/dp/B019XSHH8M/ref=lp_1968076031_1_14?s=apparel&ie=UTF8&qid=1574663162&sr=1-14,Ben Martin Men's Regular Fit Denim Jeans,3.2 out of 5 stars,591,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans  649   2,499
+    3.2 out of 5 stars
+591"
+B019FGR6YM,,https://www.amazon.in/Ben-Martin-Relaxed-Jeans-BMW-27-BLK-p1-34_Black_34/dp/B019FGR6YM/ref=lp_1968076031_1_15?s=apparel&ie=UTF8&qid=1574663162&sr=1-15,Ben Martin Men's Regular Fit Denim Jeans,3.3 out of 5 stars,691,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans  628   2,998
+    3.3 out of 5 stars
+691"
+B07VQKNZ6D,,https://www.amazon.in/DAIS-Skinny-Mildly-Denim-Jeans/dp/B07VQKNZ6D/ref=lp_1968076031_1_16?s=apparel&ie=UTF8&qid=1574663162&sr=1-16,DAIS Skinny Fit Mid Rise Mildly Wash Denim Men's Jeans Pants Pack of 3 Jeans,3 out of 5 stars,49,,,Jeans,,"DAIS Skinny Fit Mid Rise Mildly Wash Denim Men's Jeans Pants Pack of 3 Jeans  1,049   3,899
+    3 out of 5 stars
+49"
+B0767RK28J,,https://www.amazon.in/Diverse-Mens-Slim-Jeans-DVD01D2L01-1m_Navy_34W/dp/B0767RK28J/ref=lp_1968076031_1_17?s=apparel&ie=UTF8&qid=1574663162&sr=1-17,Diverse Men's Slim Fit Stretchable Jeans,3.7 out of 5 stars,381,,,Jeans,,"Diverse Men's Slim Fit Stretchable Jeans  432 -   2,308
+    3.7 out of 5 stars
+381"
+B07D6MMQ3P,,https://www.amazon.in/Urbano-Fashion-Stretchable-Jogger-hpsjogger-lgrey-34-fba/dp/B07D6MMQ3P/ref=lp_1968076031_1_18?s=apparel&ie=UTF8&qid=1574663162&sr=1-18,Urbano Fashion Men's Light Grey Slim Fit Stretchable Jogger Jeans,3.4 out of 5 stars,311,,,Jeans,,"Urbano Fashion Men's Light Grey Slim Fit Stretchable Jogger JeansDeal of the Day  649   1,599
+    3.4 out of 5 stars
+311"
+B07842CF1P,,https://www.amazon.in/EditLook-Relaxed-pocket-Distressed-Damaged/dp/B07842CF1P/ref=lp_1968076031_1_19?s=apparel&ie=UTF8&qid=1574663162&sr=1-19,EditLook Knee Cut/Slit Cut Men's Relaxed fit Round Pocket Distressed Damaged Jeans,3.1 out of 5 stars,43,,,Jeans,,"EditLook Knee Cut/Slit Cut Men's Relaxed fit Round Pocket Distressed Damaged Jeans  549   1,198
+    3.1 out of 5 stars
+43"
+B06Y6MHSVR,,https://www.amazon.in/Ben-Martin-Relaxed-BMW007-JJ-3-DBGT-34-01_Dark-Tint_34/dp/B06Y6MHSVR/ref=lp_1968076031_1_20?s=apparel&ie=UTF8&qid=1574663162&sr=1-20,Ben Martin Men's Regular Fit Denim Jeans,3 out of 5 stars,257,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans  649   2,499
+    3 out of 5 stars
+257"
+B07DMZ7JXK,,https://www.amazon.in/Ben-Martin-Denim-Regular-White_32/dp/B07DMZ7JXK/ref=lp_1968076031_1_21?s=apparel&ie=UTF8&qid=1574663162&sr=1-21,Ben Martin Men's Regular Fit Denim Jeans(BMW-JNS-.WHITEnew),3.6 out of 5 stars,237,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans(BMW-JNS-.WHITEnew)  749   2,998
+    3.6 out of 5 stars
+237"
+B019FGRBVA,,https://www.amazon.in/Ben-Martin-Relaxed-BMW-JJ9-LB-P2-32_Light-Blue_38/dp/B019FGRBVA/ref=lp_1968076031_1_22?s=apparel&ie=UTF8&qid=1574663162&sr=1-22,Ben Martin Men's Denim Jeans,3.4 out of 5 stars,510,,,Jeans,,"Ben Martin Men's Denim Jeans  623 -   648
+    3.4 out of 5 stars
+510"
+B07M7CK4C2,,https://www.amazon.in/Zard-Stretchable-Fabric-Black-Jeans/dp/B07M7CK4C2/ref=lp_1968076031_1_23?s=apparel&ie=UTF8&qid=1574663162&sr=1-23,"L,Zard Men's Stretchable Fabric Black Slim Fit Jeans",3.7 out of 5 stars,104,,,Jeans,,"L,Zard Men's Stretchable Fabric Black Slim Fit Jeans  595 -   599Save _ 50.00 with coupon
+    3.7 out of 5 stars
+104"
+B07DMYWXHP,,https://www.amazon.in/Ben-Martin-Regular-Denim-Grey_32/dp/B07DMYWXHP/ref=lp_1968076031_1_24?s=apparel&ie=UTF8&qid=1574663162&sr=1-24,Ben Martin Men's Regular Fit Denim Jeans,3.1 out of 5 stars,221,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans  749   2,998
+    3.1 out of 5 stars
+221"
+B07MLZYCG1,,https://www.amazon.in/Neostreak-Mens-Jeans-neohps-lgrey-32_Light-Grey_32W/dp/B07MLZYCG1/ref=lp_1968076031_1_25?s=apparel&ie=UTF8&qid=1574663162&sr=1-25,Neostreak Men's Slim Fit Stretchable Jeans,3.2 out of 5 stars,82,,,Jeans,,"Neostreak Men's Slim Fit Stretchable Jeans  667   1,999
+    3.2 out of 5 stars
+82"
+B07CQTZ9F1,,https://www.amazon.in/Halogen-Denim-Skinny-Jeans-White/dp/B07CQTZ9F1/ref=lp_1968076031_1_26?s=apparel&ie=UTF8&qid=1574663162&sr=1-26,Halogen Men's Copperstone Skinny Fit White Denim Jeans,3.7 out of 5 stars,111,,,Jeans,,"Halogen Men's Copperstone Skinny Fit White Denim Jeans  899   3,599
+    3.7 out of 5 stars
+111"
+B074YVZ996,,https://www.amazon.in/Urbano-Fashion-Mens-Jeans-eps-grey-32-fba/dp/B074YVZ996/ref=lp_1968076031_1_27?s=apparel&ie=UTF8&qid=1574663162&sr=1-27,Urbano Fashion Men's Grey Slim Fit Stretch Jeans,3.1 out of 5 stars,264,,,Jeans,,"Urbano Fashion Men's Grey Slim Fit Stretch Jeans  569   1,199
+    3.1 out of 5 stars
+264"
+B07RNX3XXN,,https://www.amazon.in/DAIS-Skinny-Stretchable-Mildly-Denim/dp/B07RNX3XXN/ref=lp_1968076031_1_28?s=apparel&ie=UTF8&qid=1574663162&sr=1-28,DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Denim Jeans Pants,2.9 out of 5 stars,66,,,Jeans,,"DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Denim Jeans Pants  449   1,299
+    2.9 out of 5 stars
+66"
+,,https://www.amazon.in/Lee-X-Line-Jeans-L35976248XLN_Jet-Black_32/dp/B07M6R6JZF/ref=lp_1968076031_1_29?s=apparel&ie=UTF8&qid=1574663162&sr=1-29,Lee X-Line Men's Jogger Jeans,,,,,Jeans,,"Lee X-Line Men's Jogger Jeans  911 -   1,707"
+B07MB5J1WW,,https://www.amazon.in/Amazon-Brand-Symbol-AD-SK-402_Medium-Blue_30W/dp/B07MB5J1WW/ref=lp_1968076031_1_30?s=apparel&ie=UTF8&qid=1574663162&sr=1-30,Amazon Brand - Symbol Men's Skinny Fit Jeans,4.2 out of 5 stars,43,,,Jeans,,"Amazon Brand - Symbol Men's Skinny Fit Jeans  789 -   2,124
+    4.2 out of 5 stars
+43"
+B07DPTD73P,,https://www.amazon.in/Amazon-Brand-Symbol-AV-SK-11_Dark-Blue_32W/dp/B07DPTD73P/ref=lp_1968076031_1_31?s=apparel&ie=UTF8&qid=1574663162&sr=1-31,Amazon Brand - Symbol Men's Stretchable Jeans,3.3 out of 5 stars,17,,,Jeans,,"Amazon Brand - Symbol Men's Stretchable Jeans  699   2,099
+    3.3 out of 5 stars
+17"
+B07MC3DN38,,https://www.amazon.in/Zard-Mens-Stretchable-Fabric-Jeans/dp/B07MC3DN38/ref=lp_1968076031_1_32?s=apparel&ie=UTF8&qid=1574663162&sr=1-32,"L,Zard Men's Stretchable Fabric Blue Slim Fit Jeans",3.5 out of 5 stars,45,,,Jeans,,"L,Zard Men's Stretchable Fabric Blue Slim Fit Jeans  599   2,299Save _ 50.00 with coupon
+    3.5 out of 5 stars
+45"
+B07CWT3MFK,,https://www.amazon.in/Ben-Martin-Regular-Denim-BMW-JNS-D-Grey/dp/B07CWT3MFK/ref=lp_1968076031_1_33?s=apparel&ie=UTF8&qid=1574663162&sr=1-33,Ben Martin Men's Regular Fit Denim Jeans(BM-JNS-D.Grey),3.6 out of 5 stars,114,,,Jeans,,"Ben Martin Men's Regular Fit Denim Jeans(BM-JNS-D.Grey)  749   2,499
+    3.6 out of 5 stars
+114"
+B01M7P838V,,https://www.amazon.in/Ben-Martin-Relaxed-Jeans-BMWJJ-3-BROWN34/dp/B01M7P838V/ref=lp_1968076031_1_34?s=apparel&ie=UTF8&qid=1574663162&sr=1-34,Ben Martin Men's Denim Regular Fit Jeans,3.2 out of 5 stars,194,,,Jeans,,"Ben Martin Men's Denim Regular Fit Jeans  649   2,499
+    3.2 out of 5 stars
+194"
+B0767KPNV4,,https://www.amazon.in/Diverse-Relaxed-Jeans-DVD01D2L01-1q_Indigo-Blue_40W/dp/B0767KPNV4/ref=lp_1968076031_1_35?s=apparel&ie=UTF8&qid=1574663162&sr=1-35,Diverse Men's Relaxed Fit Stretchable Jeans,3.8 out of 5 stars,61,,,Jeans,,"Diverse Men's Relaxed Fit Stretchable Jeans  599   1,999
+    3.8 out of 5 stars
+61"
+B077GPN5YG,,https://www.amazon.in/Zard-Fashionable-Stretchable-Jeans-Stylish/dp/B077GPN5YG/ref=lp_1968076031_1_36?s=apparel&ie=UTF8&qid=1574663162&sr=1-36,"L,Zard Slim Fit Blue Stretchable Jeans for Men's Jeans for Blue Jeans for Men,Men's Blue Jeans",4 out of 5 stars,111,,,Jeans,,"L,Zard Slim Fit Blue Stretchable Jeans for Men's Jeans for Blue Jeans for Men,Men's Blue Jeans  590 -   603Save _ 50.00 with coupon
+    4 out of 5 stars
+111"
+B07XG55KJP,,https://www.amazon.in/Amazon-Brand-Symbol-SYMCOM-07-SK_Light-Grey_32W/dp/B07XG55KJP/ref=lp_1968076031_1_37?s=apparel&ie=UTF8&qid=1574663162&sr=1-37,Amazon Brand - Symbol Men's Skinny Fit Jeans,3.6 out of 5 stars,15,,,Jeans,,"Amazon Brand - Symbol Men's Skinny Fit Jeans  609   1,599
+    3.6 out of 5 stars
+15"
+B07VJ33J1M,,https://www.amazon.in/DAIS-Skinny-Stretchable-Mildly-Denim/dp/B07VJ33J1M/ref=lp_1968076031_1_38?s=apparel&ie=UTF8&qid=1574663162&sr=1-38,DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Dark Blue Denim Jeans Pants,3.5 out of 5 stars,14,,,Jeans,,"DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Dark Blue Denim Jeans Pants  449   1,299
+    3.5 out of 5 stars
+14"
+B07QHSJ69Z,,https://www.amazon.in/Neostreak-Stretchable-Jeans-neoeps-Dblue-Blue_32/dp/B07QHSJ69Z/ref=lp_1968076031_1_39?s=apparel&ie=UTF8&qid=1574663162&sr=1-39,Neostreak Men's Slim Fit Stretchable Jeans,3.8 out of 5 stars,34,,,Jeans,,"Neostreak Men's Slim Fit Stretchable Jeans  549 -   559
+    3.8 out of 5 stars
+34"
+B07MSDBXZ3,,https://www.amazon.in/Zard-Mens-Stretchable-Fabric-Jeans/dp/B07MSDBXZ3/ref=lp_1968076031_1_40?s=apparel&ie=UTF8&qid=1574663162&sr=1-40,"L,Zard Men's Stretchable Fabric Blue Slim Fit Jeans",3.4 out of 5 stars,127,,,Jeans,,"L,Zard Men's Stretchable Fabric Blue Slim Fit Jeans  599   2,299Save _ 50.00 with coupon
+    3.4 out of 5 stars
+127"
+B01M3PM7G7,,https://www.amazon.in/Ben-Martin-Relaxed-ABMWJJ-3-GRN34_Dark-Tint_34/dp/B01M3PM7G7/ref=lp_1968076031_1_41?s=apparel&ie=UTF8&qid=1574663162&sr=1-41,Ben Martin Men's Denim Jeans,3.2 out of 5 stars,379,,,Jeans,,"Ben Martin Men's Denim Jeans  649   2,499
+    3.2 out of 5 stars
+379"
+B07YRPNBGK,,https://www.amazon.in/Signature-Surplus-Stretchable-Regular-Straight/dp/B07YRPNBGK/ref=lp_1968076031_1_42?s=apparel&ie=UTF8&qid=1574663162&sr=1-42,Levis Signature Export Surplus with Out Label & mrp Tags Men's Stretchable Regular Straight fit Jeans,2.8 out of 5 stars,4,,,Jeans,,"Levis Signature Export Surplus with Out Label & mrp Tags Men's Stretchable Regular Straight fit Jeans  599   1,899
+    2.8 out of 5 stars
+4"
+B07R1PDNCS,,https://www.amazon.in/Urbano-Fashion-Jogger-Stretch-hpsjogger-mgrey-32-01/dp/B07R1PDNCS/ref=lp_1968076031_1_43?s=apparel&ie=UTF8&qid=1574663162&sr=1-43,Urbano Fashion Men's Grey Slim Fit Jogger Jeans Stretch,3.7 out of 5 stars,88,,,Jeans,,"Urbano Fashion Men's Grey Slim Fit Jogger Jeans StretchDeal of the Day  649   1,699
+    3.7 out of 5 stars
+88"
+B078GH2HD3,,https://www.amazon.in/Amazon-Brand-Symbol-AD-SK-202_Dark-Blue_30W/dp/B078GH2HD3/ref=lp_1968076031_1_44?s=apparel&ie=UTF8&qid=1574663162&sr=1-44,Amazon Brand - Symbol Men's Skinny Fit Stretchable Jeans,3.6 out of 5 stars,34,,,Jeans,,"Amazon Brand - Symbol Men's Skinny Fit Stretchable Jeans  809   1,799
+    3.6 out of 5 stars
+34"
+B07TY267YQ,,https://www.amazon.in/Levis-Mens-Slim-Jeans-18298-0715_Blue_34/dp/B07TY267YQ/ref=lp_1968076031_1_45?s=apparel&ie=UTF8&qid=1574663162&sr=1-45,Levi's Men's Slim Fit Jeans,3.2 out of 5 stars,9,,,Jeans,,"Levi's Men's Slim Fit Jeans  1,499 -   1,870
+    3.2 out of 5 stars
+9"
+B07GXQ8G1D,,https://www.amazon.in/Amazon-Brand-Inkast-SK-22_Medium-Blue_32W/dp/B07GXQ8G1D/ref=lp_1968076031_1_46?s=apparel&ie=UTF8&qid=1574663162&sr=1-46,Amazon Brand - Inkast Denim Co. Men's Skinny Fit Stretchable Jeans,5 out of 5 stars,1,,,Jeans,,"Amazon Brand - Inkast Denim Co. Men's Skinny Fit Stretchable Jeans  589   2,799
+    5 out of 5 stars
+1"
+,,https://www.amazon.in/DAIS-Skinny-Stretchable-Mildly-Light/dp/B07WL7S4KQ/ref=lp_1968076031_1_47?s=apparel&ie=UTF8&qid=1574663162&sr=1-47,DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Light Blue Denim Jeans Pants,,,,,Jeans,,"DAIS Skinny Fit Stretchable Mid Rise Mildly Wash Men's Light Blue Denim Jeans Pants  385   1,399"
+B079ZZPJZV,,https://www.amazon.in/Amazon-Brand-Symbol-Skinny-AD-SK-189_White_30W/dp/B079ZZPJZV/ref=lp_1968076031_1_48?s=apparel&ie=UTF8&qid=1574663162&sr=1-48,Amazon Brand - Symbol Men's Stretchable Jeans,3.7 out of 5 stars,59,,,Jeans,,"Amazon Brand - Symbol Men's Stretchable Jeans  789   1,799
+    3.7 out of 5 stars
+59"
+B019FGR5ZC,,https://www.amazon.in/Ben-Martin-Relaxed-BMW-JJ9-DB-P3-32_Dark-Blue_32/dp/B019FGR5ZC/ref=lp_1968076031_1_49?s=apparel&ie=UTF8&qid=1574663162&sr=1-49,Ben Martin Men's Cotton Regular Fit Jeans,3.6 out of 5 stars,302,,,Jeans,,"Ben Martin Men's Cotton Regular Fit Jeans  648   2,499
+    3.6 out of 5 stars
+302"
+B07MN1LVDH,,https://www.amazon.in/Peter-England-Jeans-PJDNJSLFC49178_Medium-Blue_34W/dp/B07MN1LVDH/ref=lp_1968076031_1_50?s=apparel&ie=UTF8&qid=1574663162&sr=1-50,Peter England Men's Slim Fit Jeans,4.4 out of 5 stars,3,,,Jeans,,"Peter England Men's Slim Fit Jeans  1,062 -   1,799
+    4.4 out of 5 stars
+3"
+B0767JD3NY,,https://www.amazon.in/Diverse-Mens-Jeans-DVD01D2L01-1n_Indigo-Blue_34W/dp/B0767JD3NY/ref=lp_1968076031_1_51?s=apparel&ie=UTF8&qid=1574663162&sr=1-51,Diverse Men's Slim Fit Stretchable Jeans,4.1 out of 5 stars,19,,,Jeans,,"Diverse Men's Slim Fit Stretchable Jeans  519   1,999
+    4.1 out of 5 stars
+19"
+,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_1?ie=UTF8&adId=A07927748EXOMHZP7THY&url=https%3A%2F%2Fwww.amazon.in%2FDesigner-wear-Women-Western-KA001_L_Blue%2Fdp%2FB081544JLT%2Fref%3Dlp_11400137031_1_1_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663263%26sr%3D1-1-spons%26psc%3D1&qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse,Designer wear Women Western Top (KA001_$P_Blue),,,,,Western Wear,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&adIndex=0""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&eventType=2&adIndex=0"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&eventType=2&adIndex=0"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&eventType=2&adIndex=0"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&adIndex=0""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20030137336806&adIndex=0"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=3397CWT1K1RQMJ27AD44&amp;childRequestId=3397CWT1K1RQMJ27AD44&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=1&amp;qualifier=1574663263&amp;id=8467860668508250"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20030137336806&amp;eventType=2&amp;adIndex=0"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20030137336806&amp;adIndex=0&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Designer wear Women Western Top (KA001_$P_Blue)  1,399"
+B07VV3PG1W,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_2?ie=UTF8&adId=A076496817I2M6YSP30OQ&url=https%3A%2F%2Fwww.amazon.in%2FNatureFab-organic-Bamboo-Legging%2Fdp%2FB07VV3PG1W%2Fref%3Dlp_11400137031_1_2_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663263%26sr%3D1-2-spons%26psc%3D1&qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse,NatureFab organic Bamboo Legging,4.5 out of 5 stars,2,,,Western Wear,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&adIndex=1""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&eventType=2&adIndex=1"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&eventType=2&adIndex=1"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&eventType=2&adIndex=1"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&adIndex=1""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024685303108&adIndex=1"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=3397CWT1K1RQMJ27AD44&amp;childRequestId=3397CWT1K1RQMJ27AD44&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=2&amp;qualifier=1574663263&amp;id=8467860668508250"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20024685303108&amp;eventType=2&amp;adIndex=1"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20024685303108&amp;adIndex=1&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]NatureFab organic Bamboo Legging  499   999
+    4.5 out of 5 stars
+2"
+B07TGPS888,,/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_browse_apparel_sr_pg1_3?ie=UTF8&adId=A10323723UKGIG05NF7BK&url=https%3A%2F%2Fwww.amazon.in%2FFusefit-FFA-WB001-02-Womens-Tights-FFA-WB001-02_Black_Small%2Fdp%2FB07TGPS888%2Fref%3Dlp_11400137031_1_3_sspa%3Fs%3Dapparel%26ie%3DUTF8%26qid%3D1574663263%26sr%3D1-3-spons%26psc%3D1&qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse,Fusefit Women's Tights,5 out of 5 stars,3,,,Western Wear,,"Sponsored
+                
+         P.when('A','SponsoredProductsRendering').execute('force-impression-logging-clicktime', function sponsoredRendering (A, SL) {
+           var $ = A.$;
+           var data_asin = 'asin';
+           var data_view_pixel_url = 'view-pixel-url';
+           var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&adIndex=2""+'""]';
+           var selectors_asinElement = '[data-asin]';
+           var picassoHrefSelector = '[href*=\'picassoRedirect.html\']';
+           var header = $(selector_header);
+           var asinElement = header.closest(selectors_asinElement);
+           if (!asinElement || asinElement.data(data_asin) === undefined) {
+               // Fallback logic if closest function is not supported
+               A.$(selectors_asinElement).each(function(){
+                var asin = $(this);
+                var header = asin.find(selector_header);
+                
+                if (header.data(data_view_pixel_url) !== undefined) {
+                   asinElement = asin;
+                }
+               });
+           }
+           var $spAsin = asinElement.first();
+           if (asinElement.data(data_asin) !== undefined) {
+               SL.logMessage(""Checking impression pixel for asin : "" + asinElement.data(data_asin) + "", with pixel url : "" + ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&eventType=2&adIndex=2"");
+               // Find all the jQuery objects which contains ""picassoredirct.html"" in the href and bind them with onclick.
+               $spAsin.find(picassoHrefSelector)
+                 .click(function() {
+                   SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&eventType=2&adIndex=2"");
+                 })
+                 .mousedown(function(e) {
+                   switch (e.which) {
+                     // 2 is middle click, 1 is left click which is covered in the above click
+                     case 2:
+                       SL.forceFireRenderPixel(""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&eventType=2&adIndex=2"");
+                       break;
+                     // 3 is right click which we do not handle the case here,
+                     default:
+                       break;
+                   }
+               });
+            }
+         });
+      
+    
+       P.when('A','SponsoredProductsViewability').execute('sponsored-products-track-views-t6', function sponsoredViewability (A, SV) {
+         var $ = A.$;
+         var data_asin = 'asin';
+         var data_view_pixel_url = 'view-pixel-url';
+         var selector_header = '[data-view-pixel-url=""'+ ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&adIndex=2""+'""]';
+         var selectors_asinElement = '[data-asin]';
+         var header = $(selector_header);
+         var asinElement = header.closest(selectors_asinElement);
+         if (!asinElement || asinElement.data(data_asin) === undefined) {
+             // Fallback logic if closest function is not supported
+             A.$(selectors_asinElement).each(function(){
+              var asin = $(this);
+              var header = asin.find(selector_header);
+              
+              if (header.data(data_view_pixel_url) !== undefined) {
+                 asinElement = asin;
+              }
+             });
+         } 
+         if (asinElement.data(data_asin) !== undefined) {
+             SV.logMessage(""Registering asin: "" + asinElement.data(data_asin));
+             var pageNumber = (""1"" === ""1"") ? ""P1"":""P2+"";
+             var subPlacement = ""sp_atf_browse"" + '-' + pageNumber + 
+                             '-' +""Image"" + '-' +""1"";
+             SV.registerViewTrackingElement(asinElement, ""search-pc"",
+                                        ""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&id=8467860668508250&widgetName=sp_atf_browse&adId=20024605377908&adIndex=2"", subPlacement);
+         }
+       });
+     
+    
+          <img alt="""" src=""https://fls-eu.amazon.com/1/amazon-clicks/1/OP/?requestId=3397CWT1K1RQMJ27AD44&amp;childRequestId=3397CWT1K1RQMJ27AD44&amp;widgetName=sp_atf_browse&amp;searchResultNumber=1&amp;impressionRankOnAsin=3&amp;qualifier=1574663263&amp;id=8467860668508250"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20024605377908&amp;eventType=2&amp;adIndex=2"">
+   
+          <img alt="""" src=""/gp/sponsored-products/logging/log-action.html?qualifier=1574663263&amp;id=8467860668508250&amp;widgetName=sp_atf_browse&amp;adId=20024605377908&amp;adIndex=2&amp;eventType=101"">
+   These are ads for products you'll find on Amazon.in.Clicking an ad will take you to the product's page.Learn more about Sponsored ProductsSee a problem with these advertisements?Let us know[Sponsored]Fusefit Women's Tights  499   1,199
+    5 out of 5 stars
+3"
+B01ANEW8G6,,https://www.amazon.in/Goodtry-Womens-Cotton-GTWH-029-BLK-M-_Medium/dp/B01ANEW8G6/ref=lp_11400137031_1_4?s=apparel&ie=UTF8&qid=1574663263&sr=1-4,GOODTRY Women's Cotton Hoodies-Black,4 out of 5 stars,920,,,Western Wear,,"Best sellerin Amazon Launchpad
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        GOODTRY Women's Cotton Hoodies-Black  580 -   899
+    4 out of 5 stars
+920"
+B07T8QC296,,https://www.amazon.in/FUNDAY-FASHION-Womens-Boyfriend-Jogger/dp/B07T8QC296/ref=lp_11400137031_1_5?s=apparel&ie=UTF8&qid=1574663263&sr=1-5,FUNDAY FASHION Women's Boyfriend fit Denim Jogger,3.5 out of 5 stars,245,,,Western Wear,,"Best sellerin Women's Jeans & Jeggings
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        FUNDAY FASHION Women's Boyfriend fit Denim Jogger  345 -   529
+    3.5 out of 5 stars
+245"
+B073JRL29H,,https://www.amazon.in/Qube-Fort-Collins-Womens-39207_Navy_M/dp/B073JRL29H/ref=lp_11400137031_1_6?s=apparel&ie=UTF8&qid=1574663263&sr=1-6,Qube By Fort Collins Women's Cape Jacket,4.3 out of 5 stars,97,,,Western Wear,,"Qube By Fort Collins Women's Cape Jacket  1,099   2,199
+    4.3 out of 5 stars
+97"
+B07P9136MB,,https://www.amazon.in/Funday-Fashion-Sleeve-Womens-Jacket/dp/B07P9136MB/ref=lp_11400137031_1_7?s=apparel&ie=UTF8&qid=1574663263&sr=1-7,Funday Fashion Full Sleeve Solid Women's Denim Jacket,3.9 out of 5 stars,39,,,Western Wear,,"Best sellerin Women's Jackets
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Funday Fashion Full Sleeve Solid Women's Denim Jacket  450 -   519
+    3.9 out of 5 stars
+39"
+B014SQJENK,,https://www.amazon.in/Jockey-Womens-Thermal-2503-0105-CHAML_Charcoal-Melange_Medium/dp/B014SQJENK/ref=lp_11400137031_1_8?s=apparel&ie=UTF8&qid=1574663263&sr=1-8,Jockey Women's Cotton Thermal 3/4th Sleeve Top,4.1 out of 5 stars,162,,,Western Wear,,"Best sellerin Women's Tops
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Jockey Women's Cotton Thermal 3/4th Sleeve Top  395 -   724
+    4.1 out of 5 stars
+162"
+B07PRK35DB,,https://www.amazon.in/Secret-Boutique-Printed-Jeggings-Material/dp/B07PRK35DB/ref=lp_11400137031_1_9?s=apparel&ie=UTF8&qid=1574663263&sr=1-9,The Secret Boutique Checks Printed Jeggings for Womens and Girls with Cotton Plus Material Pack of 2 (White & Grey),3.6 out of 5 stars,111,,,Western Wear,,"The Secret Boutique Checks Printed Jeggings for Womens and Girls with Cotton Plus Material Pack of 2 (White & Grey)  420   1,299
+    3.6 out of 5 stars
+111"
+B07NVD1NWR,,https://www.amazon.in/KING-DENIM-Enterprises-Sleeves-Comfort-Regular/dp/B07NVD1NWR/ref=lp_11400137031_1_10?s=apparel&ie=UTF8&qid=1574663263&sr=1-10,KING-DENIM Shree Kmt Enterprises Full Sleeves Comfort Fit Regular Collar Blue Jacket for Women,3.9 out of 5 stars,319,,,Western Wear,,"KING-DENIM Shree Kmt Enterprises Full Sleeves Comfort Fit Regular Collar Blue Jacket for Women  469   1,499
+    3.9 out of 5 stars
+319"
+B07NBR4W1Q,,https://www.amazon.in/khyati-Crepe-Casual-Girls-Medium/dp/B07NBR4W1Q/ref=lp_11400137031_1_11?s=apparel&ie=UTF8&qid=1574663263&sr=1-11,khyati Crepe Casual Tops for Girls Women (Green),3.2 out of 5 stars,287,,,Western Wear,,"khyati Crepe Casual Tops for Girls Women (Green)  189 -   295
+    3.2 out of 5 stars
+287"
+B073RHDKWD,,https://www.amazon.in/LUX-LYRA-Leggings-AL-Free_Size/dp/B073RHDKWD/ref=lp_11400137031_1_12?s=apparel&ie=UTF8&qid=1574663263&sr=1-12,LUX LYRA Women's Leggings,3.7 out of 5 stars,193,,,Western Wear,,"LUX LYRA Women's Leggings  260 -   575
+    3.7 out of 5 stars
+193"
+B079JZRP4R,,https://www.amazon.in/Uptownie-Lite-Womens-Maroon-Jumpsuit/dp/B079JZRP4R/ref=lp_11400137031_1_13?s=apparel&ie=UTF8&qid=1574663263&sr=1-13,Uptownie Lite Women's Crepe Roll Up Jumpsuit,3.9 out of 5 stars,683,,,Western Wear,,"Best sellerin Women's Jumpsuits
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Uptownie Lite Women's Crepe Roll Up Jumpsuit  695 -   809
+    3.9 out of 5 stars
+683"
+B07F4536QD,,https://www.amazon.in/Infispace-Waisted-Striped-Palazzo-Trouser/dp/B07F4536QD/ref=lp_11400137031_1_14?s=apparel&ie=UTF8&qid=1574663263&sr=1-14,INFISPACE Women's High Waisted Black & White Striped Palazzo Trouser Pants for Casual Wear,3.4 out of 5 stars,122,,,Western Wear,,"INFISPACE Women's High Waisted Black & White Striped Palazzo Trouser Pants for Casual Wear  399   999
+    3.4 out of 5 stars
+122"
+B07KX5XDNG,,https://www.amazon.in/Rudraaksha-Womens-Cotton-Printed-Mustard/dp/B07KX5XDNG/ref=lp_11400137031_1_15?s=apparel&ie=UTF8&qid=1574663263&sr=1-15,Rudraaksha Floral Printed Knee Length Dress for Women,3.9 out of 5 stars,775,,,Western Wear,,"Rudraaksha Floral Printed Knee Length Dress for Women  355 -   375
+    3.9 out of 5 stars
+775"
+B07J5VG5MR,,https://www.amazon.in/FreshTrend-Womens-Cotton-T-shirt-Medium/dp/B07J5VG5MR/ref=lp_11400137031_1_16?s=apparel&ie=UTF8&qid=1574663263&sr=1-16,FreshTrend Blue White Red Cotton Round Neck Tshirt for Women,4.2 out of 5 stars,445,,,Western Wear,,"FreshTrend Blue White Red Cotton Round Neck Tshirt for Women  270 -   349
+    4.2 out of 5 stars
+445"
+B07VXX9T74,,https://www.amazon.in/FITG18%C2%AE-Printed-Tights-Jeggings-Active/dp/B07VXX9T74/ref=lp_11400137031_1_17?s=apparel&ie=UTF8&qid=1574663263&sr=1-17,FITG18® Gym wear Leggings Ankle Length Free Size Workout Trousers | Striped Stretchable Jeggings | High Waist Sports Fitness Yoga Track Pants for Girls & Women,4 out of 5 stars,14,,,Western Wear,,"FITG18® Gym wear Leggings Ankle Length Free Size Workout Trousers | Striped Stretchable Jeggings | High Waist Sports Fitness Yoga Track…  299   999
+    4 out of 5 stars
+14"
+B07SYKNDQN,,https://www.amazon.in/DIMPY-GARMENTS-BuyNewTrend-Cotton-Dungaree/dp/B07SYKNDQN/ref=lp_11400137031_1_18?s=apparel&ie=UTF8&qid=1574663263&sr=1-18,DIMPY GARMENTS BuyNewTrend Cotton Lycra Dungaree Skirt with Top for Women,3.8 out of 5 stars,458,,,Western Wear,,"DIMPY GARMENTS BuyNewTrend Cotton Lycra Dungaree Skirt with Top for Women  549 -   599
+    3.8 out of 5 stars
+458"
+B014CLL42U,,https://www.amazon.in/Jockey-Womens-Cotton-Tank-1467-0110-BLACK-M/dp/B014CLL42U/ref=lp_11400137031_1_19?s=apparel&ie=UTF8&qid=1574663263&sr=1-19,Jockey Women's Cotton Racerback Tank Top,4.3 out of 5 stars,810,,,Western Wear,,"Jockey Women's Cotton Racerback Tank Top  140 -   399
+    4.3 out of 5 stars
+810"
+B0791L7CLY,,https://www.amazon.in/Super-weston-Womens-Cotton-Leggings/dp/B0791L7CLY/ref=lp_11400137031_1_20?s=apparel&ie=UTF8&qid=1574663263&sr=1-20,Super weston Women's Cotton Leggings - Pack of 10(6847524_Multicolour_Free Size),2.6 out of 5 stars,133,,,Western Wear,,"Super weston Women's Cotton Leggings - Pack of 10(6847524_Multicolour_Free Size)  999   1,599
+    2.6 out of 5 stars
+133"
+B07KSY18Z1,,https://www.amazon.in/STYLE-QUOTIENT-Womens-Regular-SS18SQEMILY_MRN_Maroon_Medium/dp/B07KSY18Z1/ref=lp_11400137031_1_21?s=apparel&ie=UTF8&qid=1574663263&sr=1-21,Style Quotient Women Maroon Solid Top,4.2 out of 5 stars,733,,,Western Wear,,"Style Quotient Women Maroon Solid Top  499 -   549
+    4.2 out of 5 stars
+733"
+B073ZGNVJN,,https://www.amazon.in/Campus-Sutra-Womens-Sweatshirt-AZW17_JKHNK_W_PLN_DN_AZ_M_Denim_Medium/dp/B073ZGNVJN/ref=lp_11400137031_1_22?s=apparel&ie=UTF8&qid=1574663263&sr=1-22,Campus Sutra Women's Regular Fit Cotton Jacket,3.8 out of 5 stars,292,,,Western Wear,,"Campus Sutra Women's Regular Fit Cotton Jacket  944 -   1,499
+    3.8 out of 5 stars
+292"
+B07WS9PCK6,,https://www.amazon.in/SBJ-COLLECTIONS-Ruffle-Palazzo-Overlay/dp/B07WS9PCK6/ref=lp_11400137031_1_23?s=apparel&ie=UTF8&qid=1574663263&sr=1-23,SBJ COLLECTIONS Women' Ruffle Pants Split High Waist Maxi Long Crepe Palazzo Overlay Pant Skirt,3.3 out of 5 stars,40,,,Western Wear,,"SBJ COLLECTIONS Women' Ruffle Pants Split High Waist Maxi Long Crepe Palazzo Overlay Pant Skirt  448 -   999
+    3.3 out of 5 stars
+40"
+B077DTMNP6,,https://www.amazon.in/FLEXIMAA-Womens-Cotton-Sweatshirt-ghoomar/dp/B077DTMNP6/ref=lp_11400137031_1_24?s=apparel&ie=UTF8&qid=1574663263&sr=1-24,FLEXIMAA Women's Cotton Hoodie,3.9 out of 5 stars,644,,,Western Wear,,"FLEXIMAA Women's Cotton Hoodie  649 -   749
+    3.9 out of 5 stars
+644"
+B07HKK88DF,,https://www.amazon.in/Shaun-Women-Sweatshirt-Grey/dp/B07HKK88DF/ref=lp_11400137031_1_25?s=apparel&ie=UTF8&qid=1574663263&sr=1-25,Shaun Women Sweatshirt,4 out of 5 stars,33,,,Western Wear,,"Shaun Women Sweatshirt  849 -   999Save 5% with coupon
+    4 out of 5 stars
+33"
+B07FVRR92K,,https://www.amazon.in/G-S-ENTERPRISES-Sleeves-Comfort-Regular/dp/B07FVRR92K/ref=lp_11400137031_1_26?s=apparel&ie=UTF8&qid=1574663263&sr=1-26,G.S.A ENTERPRISES Denim 3/4 Sleeves Comfort Fit Regular Collar Blue Jacket for Women,3.7 out of 5 stars,162,,,Western Wear,,"G.S.A ENTERPRISES Denim 3/4 Sleeves Comfort Fit Regular Collar Blue Jacket for Women  389 -   499
+    3.7 out of 5 stars
+162"
+B07MRJS4HP,,https://www.amazon.in/Serein-Womens-Blouson-Shrug-SER-E-38_Pink_Medium/dp/B07MRJS4HP/ref=lp_11400137031_1_27?s=apparel&ie=UTF8&qid=1574663263&sr=1-27,Serein Women's Pink Floral Georgette Long Shrug/Jacket with Full Sleeves,3.6 out of 5 stars,199,,,Western Wear,,"Serein Women's Pink Floral Georgette Long Shrug/Jacket with Full Sleeves  488 -   529
+    3.6 out of 5 stars
+199"
+B075ZQYD84,,https://www.amazon.in/Alan-Jones-Sleeve-Sweatshirt-WM17-SS01-CARROT-M_Medium_Carrot/dp/B075ZQYD84/ref=lp_11400137031_1_28?s=apparel&ie=UTF8&qid=1574663263&sr=1-28,Alan Jones Clothing Women's Cotton Sweatshirt,4.2 out of 5 stars,908,,,Western Wear,,"Alan Jones Clothing Women's Cotton Sweatshirt  649 -   749
+    4.2 out of 5 stars
+908"
+B07SZLZ8BB,,https://www.amazon.in/Riddle-Viscose-Cardigan-Sweater-Pullover/dp/B07SZLZ8BB/ref=lp_11400137031_1_29?s=apparel&ie=UTF8&qid=1574663263&sr=1-29,Riddle Women's Viscose Front Open Full Sleeve Shrug/Cardigan/Sweater/Jacket/Pullover/Hoodies,3.5 out of 5 stars,80,,,Western Wear,,"Best sellerin Women's Pullover Sweaters
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        Riddle Women's Viscose Front Open Full Sleeve Shrug/Cardigan…  199 -   259
+    3.5 out of 5 stars
+80"
+B07MFXVWFH,,https://www.amazon.in/Miss-Olive-Womens-Floral-MOSS19TP30-01-143_Maroon_M/dp/B07MFXVWFH/ref=lp_11400137031_1_30?s=apparel&ie=UTF8&qid=1574663263&sr=1-30,Miss Olive Women's Slim fit Top,4.1 out of 5 stars,157,,,Western Wear,,"Miss Olive Women's Slim fit Top  347   1,199
+    4.1 out of 5 stars
+157"
+B01N9PTKA5,,https://www.amazon.in/Maniac-Womens-Fullsleeve-Hooded-Sweatshirt/dp/B01N9PTKA5/ref=lp_11400137031_1_31?s=apparel&ie=UTF8&qid=1574663263&sr=1-31,Maniac Women's Fleece Sweatshirt,4.1 out of 5 stars,289,,,Western Wear,,"Maniac Women's Fleece Sweatshirt  588   1,499
+    4.1 out of 5 stars
+289"
+B078Y51SQ5,,https://www.amazon.in/Shaun-Womens-T-Shirts-104MNPRTD3_XNK44_Grey-Black_X-Large/dp/B078Y51SQ5/ref=lp_11400137031_1_32?s=apparel&ie=UTF8&qid=1574663263&sr=1-32,Shaun Women's T-Shirt (Pack Of 3),4 out of 5 stars,438,,,Western Wear,,"Shaun Women's T-Shirt (Pack Of 3)  597 -   689
+    4 out of 5 stars
+438"
+B072B6J2LL,,https://www.amazon.in/LUX-LYRA-Leggings-IC-10_Free/dp/B072B6J2LL/ref=lp_11400137031_1_33?s=apparel&ie=UTF8&qid=1574663263&sr=1-33,LUX LYRA Women's Leggings,4.2 out of 5 stars,410,,,Western Wear,,"Best sellerin Women's Churidar & Salwar Bottoms
+                
+        
+                
+        
+                
+            
+        
+                
+            
+        LUX LYRA Women's Leggings  200 -   599
+    4.2 out of 5 stars
+410"
+B07RNF9DBB,,https://www.amazon.in/Antik-Sleeve-Comfort-Regular-Collar/dp/B07RNF9DBB/ref=lp_11400137031_1_34?s=apparel&ie=UTF8&qid=1574663263&sr=1-34,Antik Full Sleeve Comfort Fit Regular Collar Blue Womens Denim Jacket,3.7 out of 5 stars,93,,,Western Wear,,"Antik Full Sleeve Comfort Fit Regular Collar Blue Womens Denim Jacket  649 -   699
+    3.7 out of 5 stars
+93"
+B07PFVPRMN,,https://www.amazon.in/AELOMART-Womens-Cotton-Mustard-AWT2053MDW-P/dp/B07PFVPRMN/ref=lp_11400137031_1_35?s=apparel&ie=UTF8&qid=1574663263&sr=1-35,AELOMART Women's Cotton Round Neck Mustard Half Sleeve Top(AWT2053MDW-P),4.1 out of 5 stars,558,,,Western Wear,,"AELOMART Women's Cotton Round Neck Mustard Half Sleeve Top(AWT2053MDW-P)  399   1,599
+    4.1 out of 5 stars
+558"
+B07TFF3QLS,,https://www.amazon.in/DSK-STUDIO-Regular-dtp1009-xs-Multicolour/dp/B07TFF3QLS/ref=lp_11400137031_1_36?s=apparel&ie=UTF8&qid=1574663263&sr=1-36,Dsk Studio Woman's Crepe 3/4 Sleeve Regular fit Top_dtp1009_Red,3.3 out of 5 stars,196,,,Western Wear,,"Dsk Studio Woman's Crepe 3/4 Sleeve Regular fit Top_dtp1009_Red  199   999
+    3.3 out of 5 stars
+196"
+B073HDP7M7,,https://www.amazon.in/Broadstar-Women-Denim-Black-Jeans-32/dp/B073HDP7M7/ref=lp_11400137031_1_37?s=apparel&ie=UTF8&qid=1574663263&sr=1-37,Broadstar Women Denim Black Jeans,3.6 out of 5 stars,598,,,Western Wear,,"Broadstar Women Denim Black Jeans  489 -   549
+    3.6 out of 5 stars
+598"
+B07RGFWSZF,,https://www.amazon.in/Helisha-Hosiery-Ankle-Length-FREE-SIZE-BLACK-CHEX/dp/B07RGFWSZF/ref=lp_11400137031_1_38?s=apparel&ie=UTF8&qid=1574663263&sr=1-38,Helisha Hosiery Cotton chex Pants Girls Jeggings Ripped Ankle-Length Gym Legging for Women(Free-Size) 28-32 Waist Size Free-Size fit for (M-L),3.7 out of 5 stars,96,,,Western Wear,,"Helisha Hosiery Cotton chex Pants Girls Jeggings Ripped Ankle-Length Gym Legging for Women(Free-Size) 28-32 Waist Size Free-Size fit for (M…  289 -   299
+    3.7 out of 5 stars
+96"
+B07R49N2RS,,https://www.amazon.in/FreshTrend-Melange-Sleeve-Round-Tshirt/dp/B07R49N2RS/ref=lp_11400137031_1_39?s=apparel&ie=UTF8&qid=1574663263&sr=1-39,FreshTrend Grey Melange Full Sleeve Round Neck Tshirt for Women,3.8 out of 5 stars,140,,,Western Wear,,"FreshTrend Grey Melange Full Sleeve Round Neck Tshirt for Women  349   1,199
+    3.8 out of 5 stars
+140"
+B07L8HSSXG,,https://www.amazon.in/FreshTrend-Cotton-Melange-Sleeve-Tshirt/dp/B07L8HSSXG/ref=lp_11400137031_1_40?s=apparel&ie=UTF8&qid=1574663263&sr=1-40,FreshTrend Grey Melange Full Sleeve Round Neck Tshirt for Women,3.9 out of 5 stars,348,,,Western Wear,,"FreshTrend Grey Melange Full Sleeve Round Neck Tshirt for Women  339 -   379
+    3.9 out of 5 stars
+348"
+B073JQB7R4,,https://www.amazon.in/Qube-Fort-Collins-Womens-39207_Black_M/dp/B073JQB7R4/ref=lp_11400137031_1_41?s=apparel&ie=UTF8&qid=1574663263&sr=1-41,Qube By Fort Collins Women's Cape Jacket,4.2 out of 5 stars,83,,,Western Wear,,"Qube By Fort Collins Women's Cape Jacket  1,099   2,199
+    4.2 out of 5 stars
+83"
+B07PDZN199,,https://www.amazon.in/AELOMART-Womens-Cotton-Sleeve-AWT3051-P/dp/B07PDZN199/ref=lp_11400137031_1_42?s=apparel&ie=UTF8&qid=1574663263&sr=1-42,AELOMART Women's Cotton Black Full Sleeve Top(AWT3051-P),4.1 out of 5 stars,175,,,Western Wear,,"AELOMART Women's Cotton Black Full Sleeve Top(AWT3051-P)  449   1,599
+    4.1 out of 5 stars
+175"
+B0722ZLTX1,,https://www.amazon.in/Banjara-SJK-BLT-Womens-Jacket-SJK-BLT_Pink_Free/dp/B0722ZLTX1/ref=lp_11400137031_1_43?s=apparel&ie=UTF8&qid=1574663263&sr=1-43,Banjara India Women's Jacket (SJK-BLT06_Pink_Free),3.6 out of 5 stars,91,,,Western Wear,,"Banjara India Women's Jacket (SJK-BLT06_Pink_Free)  299   999
+    3.6 out of 5 stars
+91"
+B07TZFPQ9N,,https://www.amazon.in/Fifty-55-Five-Stretchable-Jeggings/dp/B07TZFPQ9N/ref=lp_11400137031_1_44?s=apparel&ie=UTF8&qid=1574663263&sr=1-44,Fifty 55 Five Women's Poly Cotton Casual Denim Look Stretchable Jeggings (Free Size 28-34 Waist) -Set of 2,2.7 out of 5 stars,22,,,Western Wear,,"Fifty 55 Five Women's Poly Cotton Casual Denim Look Stretchable Jeggings (Free Size 28-34 Waist)…  496 -   509
+    2.7 out of 5 stars
+22"
+B07D5YYVV9,,https://www.amazon.in/Silver-Organisation-Womens-Cotton-Multicolor/dp/B07D5YYVV9/ref=lp_11400137031_1_45?s=apparel&ie=UTF8&qid=1574663263&sr=1-45,"Silver Organisation Women's Cotton Skirt (SK_5183, Multicolor, Free Size)",3.7 out of 5 stars,96,,,Western Wear,,"Silver Organisation Women's Cotton Skirt (SK_5183, Multicolor, Free Size)  401   1,299
+    3.7 out of 5 stars
+96"
+B07JBM3YF4,,https://www.amazon.in/Oyshome-Print-Stylish-Jegging-Assorted/dp/B07JBM3YF4/ref=lp_11400137031_1_46?s=apparel&ie=UTF8&qid=1574663263&sr=1-46,Oyshome Army Print Stylish Women Jegging(Free Size 28 to 30) Assorted Color,3.3 out of 5 stars,48,,,Western Wear,,"Oyshome Army Print Stylish Women Jegging(Free Size 28 to 30) Assorted Color  227   999
+    3.3 out of 5 stars
+48"
+B07QS1DP2H,,https://www.amazon.in/Trends-Tower-Quarter-Sleeve-V-Neck/dp/B07QS1DP2H/ref=lp_11400137031_1_47?s=apparel&ie=UTF8&qid=1574663263&sr=1-47,Trends Tower Women Full Sleeve V-Neck Black Color,4 out of 5 stars,43,,,Western Wear,,"Trends Tower Women Full Sleeve V-Neck Black Color  325   899Save 10% with coupon
+    4 out of 5 stars
+43"
+B07N5MX3JD,,https://www.amazon.in/FAB-STAR-Womens-Medium-Yellow/dp/B07N5MX3JD/ref=lp_11400137031_1_48?s=apparel&ie=UTF8&qid=1574663263&sr=1-48,FAB STAR- LOOK GREAT FEEL GREAT.Women's Beautiful Designer Rayon Top for Women.,3.9 out of 5 stars,239,,,Western Wear,,"FAB STAR- LOOK GREAT FEEL GREAT.Women's Beautiful Designer Rayon Top for Women.  199 -   299
+    3.9 out of 5 stars
+239"
+B0719DZYZK,,https://www.amazon.in/Banjara-SJK-BLT-Womens-Jacket-SJK-BLT_Yellow_Free/dp/B0719DZYZK/ref=lp_11400137031_1_49?s=apparel&ie=UTF8&qid=1574663263&sr=1-49,Banjara India Women's Jacket (SJK-BLT05_Yellow_Free),3.7 out of 5 stars,67,,,Western Wear,,"Banjara India Women's Jacket (SJK-BLT05_Yellow_Free)  299   999
+    3.7 out of 5 stars
+67"
+B07XTVWMBM,,https://www.amazon.in/Qube-Fort-Collins-Womens-84411AZ_Maroon_Medium/dp/B07XTVWMBM/ref=lp_11400137031_1_50?s=apparel&ie=UTF8&qid=1574663263&sr=1-50,Qube By Fort Collins Women's Jacket,5 out of 5 stars,1,,,Western Wear,,"Qube By Fort Collins Women's Jacket  1,254 -   1,258
+    5 out of 5 stars
+1"
+B07YQXS278,,https://www.amazon.in/Samtroh-Womens-Viscose-Light-Leggings/dp/B07YQXS278/ref=lp_11400137031_1_51?s=apparel&ie=UTF8&qid=1574663263&sr=1-51,Samtroh Women's Viscose Light Gold Solid Leggings - Free Size,5 out of 5 stars,1,,,Western Wear,,"Samtroh Women's Viscose Light Gold Solid Leggings - Free Size  232   999
+    5 out of 5 stars
+1"
+,,,,,,,,Western Wear,,
